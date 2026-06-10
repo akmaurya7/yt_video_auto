@@ -36,10 +36,9 @@ function Layout() {
               to={to}
               end={exact}
               className={({ isActive }) =>
-                `flex items-center gap-2 px-3 py-2 rounded text-xs transition-colors ${
-                  isActive
-                    ? 'font-semibold'
-                    : 'hover:opacity-80'
+                `flex items-center gap-2 px-3 py-2 rounded text-xs transition-colors ${isActive
+                  ? 'font-semibold'
+                  : 'hover:opacity-80'
                 }`
               }
               style={({ isActive }) => ({

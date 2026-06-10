@@ -15,3 +15,8 @@ agent/active_project.json
 AGENTS.md
 GEMINI.md
 .fk-setup.json
+venv/
+node_modules/
+dist/
+build/
+*.log

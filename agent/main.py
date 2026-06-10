@@ -92,7 +92,10 @@ async def lifespan(app: FastAPI):
 
     # SIGTERM handler for graceful shutdown
     loop = asyncio.get_event_loop()
-    loop.add_signal_handler(signal.SIGTERM, controller.request_shutdown)
+    try:
+        loop.add_signal_handler(signal.SIGTERM, controller.request_shutdown)
+    except NotImplementedError:
+        logger.debug("signal handler not supported on this OS")
 
     # Start background tasks
     ws_task = asyncio.create_task(run_ws_server())

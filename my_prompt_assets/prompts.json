@@ -1,0 +1,786 @@
+[
+  {
+    "line": 1,
+    "text": "Right now, your eyes are making tiny jerky movements called saccades — dozens of times per minute",
+    "visual_type": "Concept Visual",
+    "prompt": "A tight close-up of eyes darting frantically to emphasize the physical mechanical movement of saccades.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. Two extremely large, wide-open cartoon eyes taking up the frame, pupils drawn with zigzag motion lines to indicate rapid, jerky back-and-forth movement. Bold text 'SACCADES' floating near the eyes.\n\nStyle Notes: High contrast, sterile white background, black and white with a pop of red for the motion lines.",
+    "use_reference": false
+  },
+  {
+    "line": 2,
+    "text": "— and your brain is secretly blacking out your vision every single time.",
+    "visual_type": "Mixed",
+    "prompt": "Personifying the brain as a sneaky character pulling a literal dark curtain over the eyes perfectly explains the 'blackout' concept.\n\nScene: simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes. The stick figure is standing normally, but a giant, floating pink brain with sneaky narrowed eyes is positioned behind it, pulling a flat, dark grey rectangle (representing a curtain) down over the stick figure's face. pure white background.\n\nStyle Notes: Humorous tone, minimal white background, dark grey used strictly as an object (curtain), not a background fill.",
+    "use_reference": true
+  },
+  {
+    "line": 3,
+    "text": "You're technically going blind every few seconds.",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "Showing the literal interpretation of going blind by having the stick figure fumble around helplessly in a void.\n\nScene: simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, minimal curved mouth showing emotion. The stick figure is wearing a thick dark grey blindfold, arms outstretched forward in a panicked groping motion, sweat drops flying off its head, about to trip over a simple flat black rock on the ground. pure white background.\n\nStyle Notes: Slapstick humor, clean white void, high kinetic energy.",
+    "use_reference": true
+  },
+  {
+    "line": 4,
+    "text": "You just never noticed.",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "A stark juxtaposition—from fumbling blindly to walking with absolute, blissful ignorance.\n\nScene: simple black stick figure, round circle head, thin black lines for body and limbs. The stick figure is walking happily with a cheerful, perfectly relaxed curved smile, hands clasped behind its back, whistling (a small musical note floating nearby). Completely oblivious. pure white background, single thin horizontal black line for the floor.\n\nStyle Notes: Peaceful mood, stark minimalist composition, no background clutter.",
+    "use_reference": true
+  },
+  {
+    "line": 5,
+    "text": "Because your brain edited it out.",
+    "visual_type": "Concept Visual",
+    "prompt": "A visual metaphor of the brain as a video editor slicing up film strips to represent 'editing reality'.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. A stylized pink brain holding oversized silver scissors, cutting a strip of classic movie film in half. Small cut pieces of the film strip are dropping away.\n\nStyle Notes: Flat 2D vector style, bright pink brain pops against the pure white background, focus entirely on the cutting action.",
+    "use_reference": false
+  },
+  {
+    "line": 6,
+    "text": "Which raises a pretty uncomfortable question:",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "Breaking the fourth wall with the stick figure to emphasize a sudden, unsettling realization.\n\nScene: simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes staring wide. The stick figure is standing completely still, looking directly forward at the viewer. Its mouth is a squiggly line of discomfort, arms wrapped around itself in a slight shiver, a large question mark floating above its head. pure white background.\n\nStyle Notes: Tense, awkward humor, lots of empty white space to make the figure look isolated.",
+    "use_reference": true
+  },
+  {
+    "line": 7,
+    "text": "if your brain is constantly deleting parts of reality without telling you...",
+    "visual_type": "Mixed",
+    "prompt": "A literal depiction of 'deleting reality'—the brain throwing a physical piece of the world away while the stick figure watches in horror.\n\nScene: simple black stick figure, round circle head, thin black lines, dot eyes, mouth open in a horrified gasp, pointing at its own brain. A floating pink brain is casually tossing a solid black block (labeled 'REALITY' in bold white text) into a simple wireframe trash can. pure white background, single thin line floor.\n\nStyle Notes: Absurdist humor, clean black and white with the pink brain serving as the focal point.",
+    "use_reference": true
+  },
+  {
+    "line": 8,
+    "text": "what else has it been quietly cutting from the footage?",
+    "visual_type": "Mixed",
+    "prompt": "Using the film motif again to show missing chunks of the stick figure's own life story on a big screen.\n\nScene: simple black stick figure, round circle head, thin black lines, sitting in a tiny minimal chair viewed from behind, looking up at a large floating movie screen. The screen shows a simple line drawing of the stick figure, but a massive, jagged, empty white hole is cut directly out of the middle of the screen. pure white background.\n\nStyle Notes: Meta-humor, stark contrast between the viewing stick figure and the broken screen.",
+    "use_reference": true
+  },
+  {
+    "line": 9,
+    "text": "Here's the thing most people get wrong about perception.",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "Show a stick figure confidently walking the wrong way down a path to represent a widespread misconception.\n\nScene: simple black stick figure, round circle head, thin black lines for body and limbs, walking with eyes closed and a smug grin. A huge, glowing red 'X' icon floats directly above its head. A single thin horizontal black line forms the floor. pure white background.\n\nStyle Notes: Clean minimalist composition, the bright red 'X' is the only color pop.",
+    "use_reference": true
+  },
+  {
+    "line": 10,
+    "text": "We walk around assuming our senses are basically cameras",
+    "visual_type": "Mixed",
+    "prompt": "A literal hybrid of a stick figure and a camera to visually ground the baseline assumption.\n\nScene: simple black stick figure, round circle head, thin black lines for body and limbs, walking forward. Instead of regular eyes, it has two large, detailed black camera lenses protruding from its face, complete with small glass reflections. pure white background.\n\nStyle Notes: Humorous tech-hybrid look, plenty of breathing room in the white space.",
+    "use_reference": true
+  },
+  {
+    "line": 11,
+    "text": "— objective, faithful, recording reality as-is.",
+    "visual_type": "Concept Visual",
+    "prompt": "Representing flawless, objective observation via a sterile scientific blueprint setup.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. A sleek modern video camera icon on the left shoots a perfectly straight, bright green laser line directly at a solid red apple on the right. Large bold text above reads 'REALITY'.\n\nStyle Notes: Crisp geometric layouts, high-contrast flat colors against a sterile white backdrop.",
+    "use_reference": false
+  },
+  {
+    "line": 12,
+    "text": "But your brain isn't a camera.",
+    "visual_type": "Concept Visual",
+    "prompt": "Aggressively breaking the camera metaphor from the previous shot to signal the twist.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. The same camera icon from before is now cleanly cracked right down the middle, with a huge bright red prohibition circle-and-slash symbol stamped over it.\n\nStyle Notes: Strong graphic design, clear and immediate visual negation.",
+    "use_reference": false
+  },
+  {
+    "line": 13,
+    "text": "It's a film director.",
+    "visual_type": "Mixed",
+    "prompt": "Introducing the brain as an authoritative Hollywood character to set up the new metaphor.\n\nScene: A stylized floating pink brain wearing a tiny black beret, sitting sideways in a classic wooden canvas director's chair. The brain is holding a silver megaphone, shouting toward the right edge of the screen. pure white background.\n\nStyle Notes: Fun character-driven layout, pink brain serves as the clear focal point.",
+    "use_reference": true
+  },
+  {
+    "line": 14,
+    "text": "It decides what you see, what you hear, what you feel —",
+    "visual_type": "Mixed",
+    "prompt": "The director brain manipulating sensory feeds like a mixing board operator.\n\nScene: A floating pink brain operating a giant flat control panel with three oversized slider knobs clearly labeled 'SEE', 'HEAR', and 'FEEL'. A simple black stick figure stands passively on the left, looking up as abstract wavy broadcast lines emit from the panel. pure white background.\n\nStyle Notes: Minimal diagrammatic humor, clean labeling, text max 3 words.",
+    "use_reference": true
+  },
+  {
+    "line": 15,
+    "text": "and it makes those decisions based on what it expects to be true, not necessarily what is true.",
+    "visual_type": "Concept Visual",
+    "prompt": "Juxtaposing an actual boring reality with a wild projection inside a massive expectation thought bubble.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. On the ground sits a tiny, simple black silhouette of a kitten. Floating above it is a massive thought bubble labeled 'EXPECTATION' containing a giant, roaring tiger outline.\n\nStyle Notes: Humorous contrast, clean line work, highly scannable metaphor.",
+    "use_reference": false
+  },
+  {
+    "line": 16,
+    "text": "Neuroscientists call this predictive processing.",
+    "visual_type": "Concept Visual",
+    "prompt": "A clean textbook-style title frame to solidify the heavy science term before moving on.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. Center-frame features large, ultra-bold, clean black text reading 'PREDICTIVE PROCESSING'. Below the text is a simple blueprint outline of a human head with data arrows looping inside it.\n\nStyle Notes: Minimalist, authoritative, textbook diagram aesthetic.",
+    "use_reference": false
+  },
+  {
+    "line": 17,
+    "text": "Your brain is constantly running a simulation of the world",
+    "visual_type": "Mixed",
+    "prompt": "Showing a stick figure trapped inside a virtual reality generated by its own mind.\n\nScene: simple black stick figure, round circle head, thin black lines, wearing bulky virtual reality goggles. Wire outlines trail from the goggles directly upward into a giant pink brain floating right above its head. The stick figure reaches into thin air. pure white background.\n\nStyle Notes: Surreal minimalist humor, clean lines, high empty space ratio.",
+    "use_reference": true
+  },
+  {
+    "line": 18,
+    "text": "and only updating it when something surprising breaks through.",
+    "visual_type": "Mixed",
+    "prompt": "Shattering the virtual reality with a jarring, unexpected real-world object breaking the simulation grid.\n\nScene: The same stick figure in VR goggles, but a giant, bright red alarm clock icon suddenly smashes violently through a grid of thin black lines right in front of its face. The floating pink brain above has wide dot eyes and a wavy mouth of total shock. pure white background.\n\nStyle Notes: Sudden high energy, action lines, dramatic comic framing.",
+    "use_reference": true
+  },
+  {
+    "line": 19,
+    "text": "You are, at all times, living slightly in the past —",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "Creating a visual representation of biological 'lag' using a trailing ghost effect.\n\nScene: simple black stick figure running frantically toward a large clock icon on the right side of the screen. Directly behind the figure is a faded, dotted outline of itself, showing it is visually lagging behind reality. pure white background, single thin floor line.\n\nStyle Notes: Kinetic motion lines, high negative space to emphasize trailing behind.",
+    "use_reference": true
+  },
+  {
+    "line": 20,
+    "text": "inside a story your brain wrote about the present.",
+    "visual_type": "Mixed",
+    "prompt": "Trapping the stick figure literally inside a script page being written live by the brain.\n\nScene: simple black stick figure standing inside a giant, flat open book. On the blank page, big written text says: 'And now he stands here.' To the right, a floating pink brain holds an oversized black quill pen, looking incredibly smug. pure white background.\n\nStyle Notes: Meta-storytelling layout, clean black ink look, pink brain focal point.",
+    "use_reference": true
+  },
+  {
+    "line": 21,
+    "text": "That should bother you a little.",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "Subdued, minor visual anxiety to denote a low level of being bothered.\n\nScene: simple black stick figure standing perfectly still, looking directly forward at the camera. One of its dot eyes is slightly larger than the other in a subtle nervous twitch. A single, tiny drop of sweat falls from its head. Minimal curved worried mouth. pure white background.\n\nStyle Notes: Deadpan, awkward comedic framing, isolated in a vast white space.",
+    "use_reference": true
+  },
+  {
+    "line": 22,
+    "text": "It should bother you a lot, actually.",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "Escalating the anxiety into full-blown existential terror.\n\nScene: simple black stick figure with both thin black hands clutching its round head. Its mouth is stretched into a giant, wide-open black circle of absolute panic. Jagged vibration lines radiate off its shaking body. pure white background.\n\nStyle Notes: Extreme cartoonish distress, stark high-contrast imagery.",
+    "use_reference": true
+  },
+  {
+    "line": 23,
+    "text": "And by the end of this, it will.",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "A direct fourth-wall break with an ominous yet funny knowing look pointing at the audience.\n\nScene: simple black stick figure in a medium close-up shot, leaning toward the frame and pointing one thin black arm directly out at the viewer. It has lowered, determined eyebrows and a sharp, knowing, mischievous curved smile. pure white background.\n\nStyle Notes: High impact composition, theatrical framing, direct audience engagement.",
+    "use_reference": true
+  },
+  {
+    "line": 24,
+    "text": "Let's start with vision — because this is where the brain's con artistry is most embarrassing.",
+    "visual_type": "Mixed",
+    "prompt": "Show the brain as a literal caught con artist to immediately establish the humorous theme of the line.\n\nScene: simple black stick figure standing on the left pointing an accusing arm at a floating pink brain on the right. The brain is wearing a black domino thief mask, sweating heavily and blushing with swirling red cheek lines in embarrassment. pure white background.\n\nStyle Notes: Humorous character interactions, lots of clean white space, high-contrast comic feel.",
+    "use_reference": true
+  },
+  {
+    "line": 25,
+    "text": "You have a blind spot in each eye.",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "Visually projecting the concept of blind spots directly onto the stick figure's face.\n\nScene: simple black stick figure, round circle head, thin black lines for body and limbs. It is facing forward, looking completely shocked with its mouth wide open in a small circle. Floating a few inches directly in front of each of its dot eyes is a solid, clean black circle representing a blind spot. pure white background.\n\nStyle Notes: Minimalist diagram style combined with stick figure animation, high clarity.",
+    "use_reference": true
+  },
+  {
+    "line": 26,
+    "text": "A literal hole in your visual field where the optic nerve connects and there are zero photoreceptors.",
+    "visual_type": "Concept Visual",
+    "prompt": "A clear, textbook-style anatomical cross section of an eyeball showing the optic nerve connection point.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. A stylized cross-section diagram of a human eye. A prominent black arrow points to the exact point where the optic nerve exits the back of the eye. Bold label text reads 'OPTIC NERVE'.\n\nStyle Notes: High accuracy, clean lines, educational blueprint aesthetic.",
+    "use_reference": false
+  },
+  {
+    "line": 27,
+    "text": "No light detection. Nothing.",
+    "visual_type": "Concept Visual",
+    "prompt": "Using a universally understood icon for 'no light' or 'off' to match the definitive tone of 'Nothing.'\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. A simple flat black silhouette of a classic lightbulb. A massive, bright red prohibition diagonal slash line is drawn directly over it. Big, bold black text below reads 'NOTHING'.\n\nStyle Notes: High contrast graphic design, stark and punchy visual impact.",
+    "use_reference": false
+  },
+  {
+    "line": 28,
+    "text": "It's not small either.",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "Scale comparison using a stick figure to show that this hidden hole is unexpectedly massive.\n\nScene: simple black stick figure, round circle head, thin black lines, standing on a thin horizontal floor line. The stick figure is craning its neck completely backward, looking up in sheer awe and terror at a colossal, solid black circular void that towers over it. pure white background.\n\nStyle Notes: Dramatic scale contrast, funny over-the-top body language, deep depth of field.",
+    "use_reference": true
+  },
+  {
+    "line": 29,
+    "text": "It's roughly the size of 17 full moons stacked together in your visual field.",
+    "visual_type": "Concept Visual",
+    "prompt": "A clear visual breakdown of the '17 full moons' comparison so the audience can count and grasp the size.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. A neat, tightly packed grid cluster of exactly 17 identical light-grey circular icons representing full moons with tiny crater details. Large bold text in the corner reads '17 MOONS'.\n\nStyle Notes: Pattern-heavy, clean information design, neutral gray tones on white background.",
+    "use_reference": false
+  },
+  {
+    "line": 30,
+    "text": "That's a massive chunk of missing information.",
+    "visual_type": "Concept Visual",
+    "prompt": "A puzzle with a massive hole is the perfect metaphor for missing systemic data.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. A flat rectangular jigsaw puzzle layout, but a massive, jagged, empty white space is violently missing directly from its center, leaving the surrounding puzzle pieces disconnected.\n\nStyle Notes: Metaphorical graphic art, clean vector execution, clear focal point.",
+    "use_reference": false
+  },
+  {
+    "line": 31,
+    "text": "And yet — you've never once seen a black hole floating around in your vision. Why?",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "Stick figure inspecting its own vision closely to highlight the mystery of the invisible hole.\n\nScene: simple black stick figure, round circle head, thin black lines, holding a simple square hand mirror right up to its face. It has confused, asymmetric squiggly eyebrows, staring intensely at its reflection. A large bold black question mark floats above its head. pure white background.\n\nStyle Notes: Character-driven comedy, deep deadpan curiosity, wide open framing.",
+    "use_reference": true
+  },
+  {
+    "line": 32,
+    "text": "Because your brain just... fills it in.",
+    "visual_type": "Mixed",
+    "prompt": "Showing the brain manually taking creative liberties to fix a structural problem.\n\nScene: A floating pink brain with determined dot eyes and small thin black limbs. The brain is holding a builder's trowel, actively scooping flat white plaster and smoothing it directly over a jagged black tear in the middle of the frame. pure white background.\n\nStyle Notes: Slapstick workplace humor, pink focal element against stark monochrome textures.",
+    "use_reference": true
+  },
+  {
+    "line": 33,
+    "text": "It looks at the surrounding area, makes its best guess,",
+    "visual_type": "Mixed",
+    "prompt": "The brain acting as an analytical detective analyzing contextual patterns.\n\nScene: A floating pink brain wearing a tiny Sherlock Holmes detective hat and holding a large magnifying glass. It is peering down intently at a clean line of alternating black and white stripes, scratching its side as if calculating what comes next. pure white background.\n\nStyle Notes: Playful narrative style, crisp geometric context pattern.",
+    "use_reference": true
+  },
+  {
+    "line": 34,
+    "text": "and paints over the gap like a contractor covering a hole in the wall before the house inspection.",
+    "visual_type": "Mixed",
+    "prompt": "A literal translation of the contractor analogy for maximum comedic effect.\n\nScene: A floating pink brain wearing a yellow construction hardhat, holding a long paint roller. It is flying through the air, quickly applying a messy layer of white paint over a large dark hole in a wall to hide it. A thin line indicates the floor. pure white background.\n\nStyle Notes: Action-oriented cartoon layout, vibrant yellow pop from the hardhat.",
+    "use_reference": true
+  },
+  {
+    "line": 35,
+    "text": "It doesn't tell you it did this.",
+    "visual_type": "Mixed",
+    "prompt": "The brain hiding its actions, keeping its secrets safe from the host.\n\nScene: A floating pink brain looking directly at the camera with wide innocent eyes, holding one thin black finger over its non-existent mouth in a clear 'shh' or silence gesture. Its other arm is hiding a paint brush behind its back. pure white background.\n\nStyle Notes: Secretive and sneaky mood, deadpan humor.",
+    "use_reference": true
+  },
+  {
+    "line": 36,
+    "text": "There's no disclaimer. No asterisk.",
+    "visual_type": "Concept Visual",
+    "prompt": "Displaying a contract or official document where the expected warning labels are completely absent.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. A large flat white sheet of paper titled 'REALITY CONTRACT' in a clean font. The very bottom of the page is zoomed in, showing an empty, pristine white space with a red circle highlighting that there is no footnote text. Nearby is a giant red 'NO *' icon.\n\nStyle Notes: Graphic layout, mock legal design, high scannability.",
+    "use_reference": false
+  },
+  {
+    "line": 37,
+    "text": "Your brain just quietly commits fraud and moves on.",
+    "visual_type": "Mixed",
+    "prompt": "Show the brain executing a classic bank robber getaway to represent 'committing fraud and moving on'.\n\nScene: A pink brain on tiny black stick legs sprinting at full speed toward the right edge of the screen, leaving motion dust lines behind it. It is carrying a classic canvas sack with a giant black '$' currency symbol painted on it. pure white background.\n\nStyle Notes: High kinetic energy, funny cartoon crime archetype.",
+    "use_reference": true
+  },
+  {
+    "line": 38,
+    "text": "Here's how to prove it right now. Close your right eye.",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "Direct step-by-step interactive instruction shown clearly through the stick figure's action.\n\nScene: simple black stick figure facing forward, looking directly at the viewer. Its right eye is drawn as a flat horizontal line (tightly closed), while its left eye is a wide-open round circle. Its arms are hanging straight down. pure white background.\n\nStyle Notes: Clean tutorial formatting, completely direct composition.",
+    "use_reference": true
+  },
+  {
+    "line": 39,
+    "text": "Hold your left thumb out at arm's length.",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "Continuing the interactive experiment by adding the arm extension.\n\nScene: The same stick figure with its right eye closed, but now its left thin black arm is extended straight out forward toward the viewer, ending in an exaggeratedly large, clear thumbs-up gesture. pure white background.\n\nStyle Notes: Forefront focal point, perspective-driven line drawing.",
+    "use_reference": true
+  },
+  {
+    "line": 40,
+    "text": "Stare straight ahead and slowly move your thumb to the left.",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "Displaying the physical lateral motion path of the thumb tracking across the frame.\n\nScene: The stick figure with its right eye closed, staring intensely straight forward. Its extended thumbs-up hand is shown moving towards the left side of the screen, with a horizontal dashed arrow trail tracing the exact path of the movement. pure white background.\n\nStyle Notes: Dynamic tracking diagram lines, clean educational framing.",
+    "use_reference": true
+  },
+  {
+    "line": 41,
+    "text": "At a certain point — your thumb disappears.",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "The comical shock of a missing body part during the experiment.\n\nScene: The stick figure is looking to the left with its single open eye, jaw dropped in complete horror. Its extended left arm ends abruptly in thin air—the hand and thumb are completely missing, replaced by a tiny, funny cloud puff outline where it used to be. pure white background.\n\nStyle Notes: Sudden comedic shock, cartoonish surprise tropes.",
+    "use_reference": true
+  },
+  {
+    "line": 42,
+    "text": "Not blurs. Disappears.",
+    "visual_type": "Concept Visual",
+    "prompt": "A clear side-by-side scientific comparison frame to prove it isn't an optical blurring effect.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. Screen split in two halves by a thin vertical line. Left side shows a blurry, smeared thumb icon under a red 'X'. Right side shows a clean, blank empty circle labeled 'GONE' under a bright green checkmark.\n\nStyle Notes: Chart comparison layout, bold infographic icons.",
+    "use_reference": false
+  },
+  {
+    "line": 43,
+    "text": "Your brain ran out of data and decided 'thumb-shaped background' was a reasonable substitute.",
+    "visual_type": "Mixed",
+    "prompt": "Brain acting lazy at a computer terminal to explain the cheap visual patch job.\n\nScene: A pink brain sitting on a small stool in front of a flat computer monitor that reads 'ERROR: NO DATA'. The brain is lazily holding a stamp tool and stamping a seamless patch of solid white background color directly over a ghostly dotted outline of a thumb. pure white background.\n\nStyle Notes: Tech UI joke, minimalist administrative setup.",
+    "use_reference": true
+  },
+  {
+    "line": 44,
+    "text": "Now here's where it gets weirder.",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "Shifting the tone to indicate a dive into even deeper, more surreal concepts.\n\nScene: simple black stick figure standing in the center. The single thin black floor line beneath its feet suddenly starts to warp, wave, and bend downward into a strange surreal spiral. The stick figure's dot eyes are wide with curiosity. pure white background.\n\nStyle Notes: Minimal psychedelic distortion, intriguing and mysterious mood.",
+    "use_reference": true
+  },
+  {
+    "line": 45,
+    "text": "This same filling-in trick isn't limited to blind spots.",
+    "visual_type": "Concept Visual",
+    "prompt": "Expanding the scope of the trick across a wider field to show generalization.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. A large grid of plain black square tiles covering the frame. Multiple random squares across the grid are being systematically painted over by disembodied, floating paint rollers, turning them pure white.\n\nStyle Notes: Geometric uniformity, pattern manipulation layout.",
+    "use_reference": false
+  },
+  {
+    "line": 46,
+    "text": "Your brain does it everywhere, all the time, using context.",
+    "visual_type": "Mixed",
+    "prompt": "Presenting context clues visually via an interactive puzzle board.\n\nScene: A floating pink brain standing in front of a large, flat letter puzzle board. The board displays 'A', 'B', and a blank empty square, followed by 'D'. The brain is smiling confidently, holding up a cutout of the letter 'C' to insert into the empty spot. pure white background.\n\nStyle Notes: Cognitive science diagram style, smart and playful layout.",
+    "use_reference": true
+  },
+  {
+    "line": 47,
+    "text": "The famous checker shadow illusion —",
+    "visual_type": "Concept Visual",
+    "prompt": "A highly accurate, minimalist rendering of Adelson's classic Checker Shadow Illusion.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. A flat 2D green cylinder stands on a grey-and-white checkerboard pattern. The cylinder casts a soft diagonal shadow across the board. One light square in the shadow is boldly labeled 'A', and one dark square outside the shadow is boldly labeled 'B'.\n\nStyle Notes: Classic optical illusion diagram, clean color blocks, scientifically accurate layout.",
+    "use_reference": false
+  },
+  {
+    "line": 48,
+    "text": "where two squares that are objectively the same grey color look completely different depending on what's around them —",
+    "visual_type": "Concept Visual",
+    "prompt": "Isolating the two squares from the previous frame to reveal the shocking truth of their identical color.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. The two squares labeled 'A' and 'B' from the previous illusion are now pulled off the board and placed side-by-side in mid-air. A solid, uninterrupted horizontal grey bar connects them seamlessly, proving they are identical shades of grey.\n\nStyle Notes: Direct truth revelation frame, high-contrast clarity.",
+    "use_reference": false
+  },
+  {
+    "line": 49,
+    "text": "isn't a quirk. It's your brain applying lighting logic it learned over a lifetime, overriding what's actually there.",
+    "visual_type": "Mixed",
+    "prompt": "The brain acting as an expert lighting technician to explain its hardwired assumptions.\n\nScene: A floating pink brain wearing a director's headset, confidently adjusting a massive, heavy studio spotlight icon that is pointing down toward a simple object. A large speech bubble next to the brain shows a mini diagram of sun rays hitting the earth. pure white background.\n\nStyle Notes: Educational lecture motif, clean metaphorical iconography.",
+    "use_reference": true
+  },
+  {
+    "line": 50,
+    "text": "Your brain isn't being dumb.",
+    "visual_type": "Mixed",
+    "prompt": "Defending the brain's honor by dressing it up as a high-society intellectual genius.\n\nScene: A floating pink brain looking incredibly proud and sophisticated, wearing a tiny black graduation mortarboard hat with a tassel. It has a smug, confident smile, and three small sparkling star icons float around it to denote intelligence. pure white background.\n\nStyle Notes: Comedic prestige framing, bright clean elements.",
+    "use_reference": true
+  },
+  {
+    "line": 51,
+    "text": "It's being efficient.",
+    "visual_type": "Mixed",
+    "prompt": "Showing physical speed and algorithmic optimization to represent mental efficiency.\n\nScene: A floating pink brain wearing an athletic sweatband, sprinting at lightning speed across a massive, bold green arrow that cuts straight through the middle of a complex, windy labyrinth puzzle path below it. pure white background.\n\nStyle Notes: High-speed layout, sleek racing metaphor design.",
+    "use_reference": true
+  },
+  {
+    "line": 52,
+    "text": "It's running so many shortcuts that occasionally it shortcuts straight into being wrong.",
+    "visual_type": "Mixed",
+    "prompt": "The funny consequence of taking a shortcut way too far without looking.\n\nScene: The pink brain is zipping along a bold dashed shortcut line arrow, but the arrow leads directly off the edge of a flat cliff drop-off. The brain is frozen mid-air past the cliff edge, looking directly at the camera with wide dots eyes of pure panic. pure white background.\n\nStyle Notes: Looney Tunes physics humor, sudden action-stop composition.",
+    "use_reference": true
+  },
+  {
+    "line": 53,
+    "text": "Let's talk about memory — because if vision is the brain's rough draft, memory is its fanfiction.",
+    "visual_type": "Mixed",
+    "prompt": "Show the brain as an overly enthusiastic, amateur writer creating dramatic fictional tales to visually define 'fanfiction'.\n\nScene: A floating pink brain wearing thick black reading glasses, sitting at an old-school classic typewriter. The brain is frantically typing, and dozens of sheets of paper with messy squiggly writing are flying wildly into the air around it. pure white background.\n\nStyle Notes: Humorous, chaotic creative energy, clean line art with the pink brain contrasting the stark white space.",
+    "use_reference": true
+  },
+  {
+    "line": 54,
+    "text": "Most people imagine memory like a filing cabinet.",
+    "visual_type": "Concept Visual",
+    "prompt": "Establish the mundane, rigid misconception of memory using a literal office item.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. A tall, pristine, grey metal office filing cabinet stands perfectly straight in the center. Bold text 'MEMORY' is written on the top drawer.\n\nStyle Notes: Sterile, boring, hyper-organized aesthetic to emphasize the incorrect mental model.",
+    "use_reference": false
+  },
+  {
+    "line": 55,
+    "text": "Something happens, you store the file, you retrieve it later. Same file every time.",
+    "visual_type": "Concept Visual",
+    "prompt": "Showing a flawless, repetitive mechanical process of identical file retrieval.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. A sequence of three identical arrows looping in a circle. In the center, a pristine yellow manila folder labeled 'FILE 1' remains perfectly crisp and unchanged in every step of the loop.\n\nStyle Notes: Diagrammatic loop layout, emphasizing exact repetition and perfection.",
+    "use_reference": false
+  },
+  {
+    "line": 56,
+    "text": "That is not how memory works. Not even close.",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "Violently rejecting the previous metaphor to snap the audience into the real science.\n\nScene: simple black stick figure, round circle head, thin black lines for body and limbs, looking intensely angry with furrowed brows. It is performing a high flying karate kick directly into the grey filing cabinet from the previous frame, which is now dented and tipping over violently. pure white background.\n\nStyle Notes: High kinetic action, sudden comedic violence, stark white backdrop.",
+    "use_reference": true
+  },
+  {
+    "line": 57,
+    "text": "Every single time you remember something, you're not retrieving it — you're reconstructing it.",
+    "visual_type": "Mixed",
+    "prompt": "The brain doing arts and crafts to literally glue a broken memory back together.\n\nScene: A floating pink brain holding a bottle of white glue. It is piecing together a shattered, jagged photograph of a simple black stick figure. The pieces don't align perfectly, leaving overlapping seams and missing chunks. pure white background.\n\nStyle Notes: Messy DIY aesthetic, clear visual metaphor for reconstruction.",
+    "use_reference": true
+  },
+  {
+    "line": 58,
+    "text": "Your brain reassembles the memory from fragments, fills gaps with assumptions, and then saves the new version over the old one.",
+    "visual_type": "Mixed",
+    "prompt": "The brain actively drawing fake parts onto the memory to fill the holes, making it worse.\n\nScene: The floating pink brain is now holding a thick, bright red marker. It is scribbling a fake, crude, overly-large smiling mouth onto the torn photograph from the previous frame to fill a missing gap. Next to it, a computer floppy disk icon has a red glowing 'OVERWRITE' text above it. pure white background.\n\nStyle Notes: Humorous forgery concept, the red marker adds a jarring color pop.",
+    "use_reference": true
+  },
+  {
+    "line": 59,
+    "text": "You are, quite literally, editing your past every time you think about it.",
+    "visual_type": "Mixed",
+    "prompt": "A timeline visual where the brain is physically altering the stick figure's own history path.\n\nScene: simple black stick figure walking forward on a solid black timeline path. Behind the figure, the timeline stretches back into the past. A floating pink brain is holding a giant pink eraser, rubbing out pieces of the timeline behind the stick figure and redrawing it as a squiggly, inaccurate mess. pure white background.\n\nStyle Notes: Metaphorical concept art, minimalist framing.",
+    "use_reference": true
+  },
+  {
+    "line": 60,
+    "text": "Psychologist Elizabeth Loftus spent decades proving this.",
+    "visual_type": "Concept Visual",
+    "prompt": "A formal, academic introduction slide to ground the incoming study in real science.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. A stylized silhouette profile of a female head with a glowing lightbulb inside. Below it, large, bold, clean text reads 'ELIZABETH LOFTUS'.\n\nStyle Notes: Authoritative textbook graphic design, flat 2D shapes.",
+    "use_reference": false
+  },
+  {
+    "line": 61,
+    "text": "In one landmark study, people who witnessed a simulated car accident were later asked questions using slightly different wording.",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "Setting up the experiment with a stick figure acting as a passive witness to a crash.\n\nScene: simple black stick figure standing on the left holding a clipboard, looking like a neutral observer. In the center, two simple flat toy-like car icons (one red, one blue) are touching nose-to-nose in a minor fender bender. pure white background.\n\nStyle Notes: Sterile laboratory setup, objective framing.",
+    "use_reference": true
+  },
+  {
+    "line": 62,
+    "text": "When asked 'how fast were the cars going when they smashed into each other' versus 'when they contacted each other,' people gave wildly different speed estimates.",
+    "visual_type": "Concept Visual",
+    "prompt": "Split screen contrasting the two words and their corresponding, drastically different speedometers.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. Split screen. Left side: Word 'SMASHED' above a speedometer pinned in the red zone at max speed, with action lines. Right side: Word 'CONTACTED' above a speedometer hovering in the low green zone. \n\nStyle Notes: Infographic comparison layout, bold typography, clear data contrast.",
+    "use_reference": false
+  },
+  {
+    "line": 63,
+    "text": "And the ones asked 'smashed' later remembered — falsely — seeing broken glass.",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "A stick figure 'remembering' an intense detail that didn't exist, looking very sure of itself.\n\nScene: simple black stick figure, round circle head, thin black lines, standing with one hand on its chin in deep thought. Above its head is a large fluffy thought bubble. Inside the bubble is a dramatic illustration of shattered, flying glass shards. The stick figure has a confident, nodding expression. pure white background.\n\nStyle Notes: Subjective reality framing, high contrast between the calm figure and the violent thought bubble.",
+    "use_reference": true
+  },
+  {
+    "line": 64,
+    "text": "There was no broken glass.",
+    "visual_type": "Concept Visual",
+    "prompt": "Popping the illusion by showing an aggressively intact piece of glass.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. A completely pristine, uncracked, perfectly smooth car windshield with a small shiny reflection star on it. A giant bright red prohibition circle-slash symbol is stamped over it. Bold text 'NO GLASS'.\n\nStyle Notes: Blunt visual negation, stark objective truth.",
+    "use_reference": false
+  },
+  {
+    "line": 65,
+    "text": "One word. Entire fabricated memory.",
+    "visual_type": "Concept Visual",
+    "prompt": "Showing a single small word expanding into a massive, complex lie.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. A tiny black text block that says 'WORD' sits on the left. A massive glowing arrow points right, expanding into a huge, complex geometric web of tangled lines and fake data points. \n\nStyle Notes: Growth metaphor, clean graphic hierarchy.",
+    "use_reference": false
+  },
+  {
+    "line": 66,
+    "text": "Your brain said 'smashed sounds serious, broken glass seems appropriate' and just... manufactured evidence.",
+    "visual_type": "Mixed",
+    "prompt": "The brain acting as a literal factory machine producing fake evidence bags.\n\nScene: A floating pink brain pulling a heavy mechanical lever. Out of a metal chute below the brain, a plastic police evidence bag is dropping out. Inside the bag are jagged shards of broken glass. pure white background.\n\nStyle Notes: Industrial humor, dark comedy concept, clear visual storytelling.",
+    "use_reference": true
+  },
+  {
+    "line": 67,
+    "text": "This is called the misinformation effect,",
+    "visual_type": "Concept Visual",
+    "prompt": "Stamping the official psychological term onto the screen for retention.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. Large, ultra-bold, uppercase text 'MISINFORMATION EFFECT' in the center. A massive red rubber stamp has just hit the text, leaving a red ink splatter effect around the edges.\n\nStyle Notes: Bureaucratic aesthetic, high impact title card.",
+    "use_reference": false
+  },
+  {
+    "line": 68,
+    "text": "and it means your most confident memories are often your most modified ones.",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "Showing a proudly confident stick figure holding a memory that is clearly a patched-up fake.\n\nScene: simple black stick figure standing extremely proud, hands on hips, chest puffed out, curved confident smile. It is standing next to a massive golden trophy. However, the trophy is heavily wrapped in grey duct tape, missing a handle, and has a crude smiley face drawn on it. pure white background.\n\nStyle Notes: Ironic juxtaposition, character comedy, emphasis on unearned confidence.",
+    "use_reference": true
+  },
+  {
+    "line": 69,
+    "text": "Think about a childhood memory you'd swear is accurate.",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "A nostalgic frame of a stick figure holding a precious mental photograph.\n\nScene: simple black stick figure holding a simple square photo frame up to its chest. It has a warm, nostalgic curved smile. Inside the photo frame is a drawing of a tiny stick figure child holding a red balloon. pure white background.\n\nStyle Notes: Emotional, sentimental mood, intimate framing.",
+    "use_reference": true
+  },
+  {
+    "line": 70,
+    "text": "A birthday party, a family holiday, the first day of school.",
+    "visual_type": "Concept Visual",
+    "prompt": "A quick montage of classic, universally understood childhood memory icons.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. Three clean icons evenly spaced in a horizontal row: a birthday cake with one candle, a simple flat silhouette of an airplane, and a classic yellow school bus.\n\nStyle Notes: Iconography layout, minimal color palette, balanced composition.",
+    "use_reference": false
+  },
+  {
+    "line": 71,
+    "text": "There is a genuine scientific possibility that significant pieces of that memory — the colors, the words, the sequence of events — were quietly rewritten the last dozen times you remembered it.",
+    "visual_type": "Mixed",
+    "prompt": "The brain sneaking behind the sentimental photo and vandalizing/changing it without the stick figure knowing.\n\nScene: The same stick figure from before, still smiling nostalgically and holding the photo frame. But behind it, a floating pink brain is holding a paintbrush and painting the balloon in the photo blue instead of red. The brain is winking at the camera. pure white background.\n\nStyle Notes: Sneaky, unsettling but funny tone, dynamic interaction between the character's belief and the brain's action.",
+    "use_reference": true
+  },
+  {
+    "line": 72,
+    "text": "Okay. Saccades, blind spots, false memories — those are unsettling.",
+    "visual_type": "Mixed",
+    "prompt": "Summarizing the previous horrors by surrounding the stick figure with icons of what we just learned.\n\nScene: simple black stick figure, round circle head, thin black lines, standing center and shivering with a squiggly nervous mouth. Floating around its head are three icons: a darting eye, a black hole, and a shattered photograph. pure white background.\n\nStyle Notes: Recap motif, uneasy comedic mood, high contrast icons.",
+    "use_reference": true
+  },
+  {
+    "line": 73,
+    "text": "But this next part is the one that genuinely makes neuroscientists uncomfortable at dinner parties.",
+    "visual_type": "Mixed",
+    "prompt": "Putting the brain in a social setting where it makes everyone deeply awkward.\n\nScene: A long horizontal table with a thin line floor. Three simple black stick figures are sitting in minimal chairs, holding wine glasses, staring awkwardly with wide dot eyes. At the head of the table sits a giant floating pink brain wearing a tiny formal bowtie, looking incredibly smug. pure white background.\n\nStyle Notes: Awkward social comedy, lots of white space to emphasize the silence.",
+    "use_reference": true
+  },
+  {
+    "line": 74,
+    "text": "Your brain makes decisions before you're aware of them.",
+    "visual_type": "Mixed",
+    "prompt": "Show the brain deciding the stick figure's fate before the stick figure even realizes there's a choice.\n\nScene: simple black stick figure standing passively, looking blankly forward. Floating high above its head, out of its line of sight, the pink brain is holding up a large wooden sign that says 'LEFT'. The stick figure has a small question mark over its head. pure white background.\n\nStyle Notes: Puppet-master theme, clean spatial hierarchy.",
+    "use_reference": true
+  },
+  {
+    "line": 75,
+    "text": "In 1983, neuroscientist Benjamin Libet ran an experiment",
+    "visual_type": "Concept Visual",
+    "prompt": "A sterile, authoritative title card to introduce the historical experiment.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. A classic 1980s-style minimalist laboratory beaker icon. Above it, large bold text reads '1983: LIBET EXPERIMENT'.\n\nStyle Notes: Academic title slide, stark monochrome with bold typography.",
+    "use_reference": false
+  },
+  {
+    "line": 76,
+    "text": "where participants were asked to flick their wrist whenever they felt like it",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "Focus entirely on the physical action of the wrist flick.\n\nScene: simple black stick figure in a medium close-up, arm extended forward. The hand is angled sharply upward at the wrist, with three curved action lines indicating a sudden, sharp flicking motion. The figure has a neutral, focused expression. pure white background.\n\nStyle Notes: Action-oriented, clean instructional framing.",
+    "use_reference": true
+  },
+  {
+    "line": 77,
+    "text": "and note when they decided to move by watching a fast-moving clock hand.",
+    "visual_type": "Concept Visual",
+    "prompt": "A hyper-focused shot of a fast stopwatch to emphasize the precise timing aspect.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. A large, flat analog clock face with no numbers. A single, bold red second hand is blurred with motion trails to show it moving extremely fast. An eye icon stares intently at the clock.\n\nStyle Notes: Time-critical concept, pop of red for urgency.",
+    "use_reference": false
+  },
+  {
+    "line": 78,
+    "text": "He also measured the brain's electrical activity the whole time.",
+    "visual_type": "Mixed",
+    "prompt": "The stick figure wired up to a machine reading the brain's signals.\n\nScene: simple black stick figure standing still, wearing a minimal dome cap on its head with three thin wire lines trailing up to a floating flat monitor screen. The screen displays a jagged, bright green electrical EKG-style wave. pure white background.\n\nStyle Notes: Clinical, scientific testing layout, green wave is the focal point.",
+    "use_reference": true
+  },
+  {
+    "line": 79,
+    "text": "What he found was deeply rude.",
+    "visual_type": "Mixed",
+    "prompt": "The brain showing complete disrespect to the stick figure's autonomy.\n\nScene: simple black stick figure standing on the left looking offended, with a squiggly frown and arms crossed. On the right, the floating pink brain is blowing a tiny party horn and holding up a foam finger, mocking the stick figure. pure white background.\n\nStyle Notes: Absurdist humor, stark contrast between the offended figure and the rude brain.",
+    "use_reference": true
+  },
+  {
+    "line": 80,
+    "text": "The brain showed electrical activity — called the 'readiness potential' —",
+    "visual_type": "Mixed",
+    "prompt": "Visualizing the brain \"charging up\" like a battery before an action.\n\nScene: The floating pink brain, surrounded by jagged yellow lightning bolt icons. Above the brain is a bold, glowing loading bar filled halfway, with text reading 'READINESS POTENTIAL'. pure white background.\n\nStyle Notes: Video game UI logic applied to biology, dynamic energy.",
+    "use_reference": true
+  },
+  {
+    "line": 81,
+    "text": "up to half a second before the person consciously decided to move.",
+    "visual_type": "Concept Visual",
+    "prompt": "A strict timeline graph showing the shocking delay between brain and mind.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. A horizontal timeline arrow. On the far left, a brain icon with a spark. In the middle, bold text reads '-0.5 SECONDS'. On the far right, a lightbulb icon turning on.\n\nStyle Notes: Infographic layout, chronological left-to-right reading.",
+    "use_reference": false
+  },
+  {
+    "line": 82,
+    "text": "Your brain was already in motion.",
+    "visual_type": "Mixed",
+    "prompt": "The brain acting as an impatient runner who started the race early.\n\nScene: A floating pink brain wearing tiny athletic sneakers, in mid-sprint toward the right edge of the frame, leaving dust clouds behind. It is far ahead of a simple black starting line drawn on the pure white floor. pure white background.\n\nStyle Notes: High kinetic speed, sports metaphor.",
+    "use_reference": true
+  },
+  {
+    "line": 83,
+    "text": "You just got the notification late.",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "The stick figure receiving an extremely delayed push notification.\n\nScene: simple black stick figure holding a flat smartphone up to its face. The stick figure looks utterly confused. A giant speech bubble pops out of the phone showing a bell icon and the text 'LATE!'. pure white background.\n\nStyle Notes: Modern tech relatable humor, clean UI elements.",
+    "use_reference": true
+  },
+  {
+    "line": 84,
+    "text": "It's like receiving a 'you just sent an email' confirmation —",
+    "visual_type": "Concept Visual",
+    "prompt": "A universally recognized digital confirmation screen.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. A flat illustration of a computer monitor. On the screen is a massive bright green checkmark and the bold text 'EMAIL SENT'.\n\nStyle Notes: UI design, stark and sterile technology representation.",
+    "use_reference": false
+  },
+  {
+    "line": 85,
+    "text": "except you didn't write the email.",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "The stick figure completely removed from the action, proving it didn't do it.\n\nScene: simple black stick figure sitting at a minimal desk with a computer. Both of the stick figure's thin black arms are raised straight up in the air in a 'hands off' surrender gesture. Its eyes are wide and its mouth is a straight line of shock. pure white background.\n\nStyle Notes: Comedic innocence, empty space emphasizes the lack of control.",
+    "use_reference": true
+  },
+  {
+    "line": 86,
+    "text": "Your unconscious brain did. You just got CC'd.",
+    "visual_type": "Mixed",
+    "prompt": "The brain as a corporate boss doing the actual work and copying the host.\n\nScene: The floating pink brain is wearing a tiny office tie, aggressively typing on a computer keyboard. It holds up a yellow sticky note toward the camera that boldly says 'CC:'. pure white background.\n\nStyle Notes: Office humor, the pink brain contrasts with the sterile white environment.",
+    "use_reference": true
+  },
+  {
+    "line": 87,
+    "text": "Now — philosophers and scientists still debate what this means for free will,",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "Two stick figures locked in an intense intellectual argument over a massive concept.\n\nScene: Two simple black stick figures facing each other, leaning in aggressively with open shouting mouths. Between them floats a giant, heavy bold text reading 'FREE WILL?'. pure white background, single floor line.\n\nStyle Notes: Argumentative energy, text acts as a physical object in the scene.",
+    "use_reference": true
+  },
+  {
+    "line": 88,
+    "text": "so we're not going to solve that today.",
+    "visual_type": "Concept Visual",
+    "prompt": "Putting the massive philosophical concept into a box and locking it away to move on.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. A flat cardboard box with 'FREE WILL' written on it. A massive silver padlock is clamped tightly shut over the top flaps.\n\nStyle Notes: Metaphorical dismissal, clean vector box design.",
+    "use_reference": false
+  },
+  {
+    "line": 89,
+    "text": "But the implication is pretty hard to ignore:",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "The stick figure staring down a terrifying, unavoidable truth.\n\nScene: simple black stick figure, round circle head, thin black lines, standing very small on the left. It is craning its neck up, staring with wide dot eyes at a colossal, heavy black exclamation mark that towers over it on the right side of the frame. pure white background.\n\nStyle Notes: Extreme scale discrepancy, visual weight and tension.",
+    "use_reference": true
+  },
+  {
+    "line": 90,
+    "text": "the 'you' that feels like it's in charge might be more of a narrator than a driver.",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "The stick figure merely reading a script of what's happening, rather than acting.\n\nScene: simple black stick figure sitting in a tall director's chair. Instead of holding a steering wheel, it is holding a large, open book titled 'SCRIPT', reading it aloud with a small speech bubble containing a music note. pure white background.\n\nStyle Notes: Theatrical metaphor, calm and passive mood.",
+    "use_reference": true
+  },
+  {
+    "line": 91,
+    "text": "Your conscious mind may be sitting in the passenger seat,",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "Stick figure positioned strictly on the right side (passenger side) of a minimalist car frame.\n\nScene: A simple line-drawing outline of the front windshield and dashboard of a car. The simple black stick figure is sitting on the right side (passenger seat), leaning back with hands behind its head, looking completely relaxed. pure white background.\n\nStyle Notes: Perspective framing from inside a car, minimalist line art.",
+    "use_reference": true
+  },
+  {
+    "line": 92,
+    "text": "watching the road, confidently giving directions —",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "The passenger taking false ownership by barking orders.\n\nScene: The same inside-car perspective. The stick figure in the passenger seat is now leaning intensely forward, pointing a firm, commanding finger straight out the windshield, with a confident, proud curved smile. pure white background.\n\nStyle Notes: False confidence, dynamic forward-leaning posture.",
+    "use_reference": true
+  },
+  {
+    "line": 93,
+    "text": "to a driver who already decided the route.",
+    "visual_type": "Mixed",
+    "prompt": "Panning to the driver seat to reveal the brain is fully in control and ignoring the passenger.\n\nScene: Panning left inside the car outline. In the driver's seat sits the giant pink brain. It is wearing cool aviator sunglasses, gripping the steering wheel tightly, and aggressively steering the car sharply to the left, completely ignoring the stick figure pointing forward. pure white background.\n\nStyle Notes: Twist reveal, humorous contrast between the two characters' actions.",
+    "use_reference": true
+  },
+  {
+    "line": 94,
+    "text": "And the brain's response to all of this, if it could speak?",
+    "visual_type": "Mixed",
+    "prompt": "The brain stepping up to a microphone to give a press conference.\n\nScene: A floating pink brain positioned behind a simple black podium. A classic retro microphone is bent down toward the brain. pure white background.\n\nStyle Notes: Official press release framing, clean and uncluttered.",
+    "use_reference": true
+  },
+  {
+    "line": 95,
+    "text": "Probably something like: 'You're welcome. I've been handling things.",
+    "visual_type": "Mixed",
+    "prompt": "The brain looking incredibly arrogant and satisfied with its own secret labor.\n\nScene: The floating pink brain is dusting off its non-existent hands in a 'job well done' gesture. It has a deeply smug, self-satisfied smile. A tiny cartoon sparkle icon pings off its side to show how great it thinks it is. pure white background.\n\nStyle Notes: Simple visual shorthand for accomplishment, character arrogance.",
+    "use_reference": true
+  },
+  {
+    "line": 96,
+    "text": "You were busy worrying about embarrassing things you said in 2014.'",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "The tragic, relatable reality of the conscious mind agonizing over past cringe.\n\nScene: simple black stick figure curled up in a tight fetal position on the single thin floor line, hands covering its face in pure agony. Sweat droplets are flying everywhere. Floating above it is a thought bubble containing a flat calendar icon boldly displaying the year '2014'. pure white background.\n\nStyle Notes: Deep existential cringe, hilarious final punchline image.",
+    "use_reference": true
+  },
+  {
+    "line": 97,
+    "text": "So here's what we actually know.",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "Summarizing the journey by showing the stick figure reviewing a large checklist.\n\nScene: simple black stick figure, round circle head, thin black lines for body and limbs, holding a large clipboard and a pen. It is looking down at the clipboard with a focused, serious expression. pure white background.\n\nStyle Notes: Clean educational framing, resetting the visual palate for the conclusion.",
+    "use_reference": true
+  },
+  {
+    "line": 98,
+    "text": "Your visual system has hardware gaps it quietly patches over.",
+    "visual_type": "Concept Visual",
+    "prompt": "A quick visual callback to the patched vision concept.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. A large, flat eye icon with a missing jagged chunk in its center. Two large crisscrossed beige band-aids are stuck clumsily over the hole.\n\nStyle Notes: Simple metaphorical callback, high contrast.",
+    "use_reference": false
+  },
+  {
+    "line": 99,
+    "text": "Your memory rewrites itself every time you open it.",
+    "visual_type": "Concept Visual",
+    "prompt": "Callback to the memory overwrite concept using a nostalgic object being altered.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. A classic polaroid picture. A giant pink pencil is actively erasing the image inside the polaroid and crudely redrawing a new scene over the smudges.\n\nStyle Notes: Action-oriented concept art, clear focus on the alteration process.",
+    "use_reference": false
+  },
+  {
+    "line": 100,
+    "text": "And your sense of making conscious decisions arrives fashionably late to decisions that were already made.",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "Callback to the late arrival concept, showing the stick figure showing up way after the race is over.\n\nScene: simple black stick figure running into the frame from the left, panting heavily with sweat drops flying, holding a small flag. On the right, a checkered finish line ribbon has already been snapped and broken long ago. pure white background.\n\nStyle Notes: Comedic timing, emphasizing the delay.",
+    "use_reference": true
+  },
+  {
+    "line": 101,
+    "text": "Does this mean you can't trust anything?",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "The stick figure experiencing peak paranoia, distrusting its own empty environment.\n\nScene: simple black stick figure standing in the center, looking wildly around with squiggly, highly paranoid eyebrows. It is holding up a giant magnifying glass to examine empty air. pure white background.\n\nStyle Notes: Exaggerated existential paranoia, high negative space to make the figure look isolated.",
+    "use_reference": true
+  },
+  {
+    "line": 102,
+    "text": "Not quite.",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "A calming, reassuring gesture to bring the anxiety back down.\n\nScene: simple black stick figure standing perfectly still. One thin black hand is raised in a gentle, calming 'stop' or 'hold on' gesture. It has a neutral, relaxed curved mouth. pure white background.\n\nStyle Notes: Grounded and reassuring, minimalist framing.",
+    "use_reference": true
+  },
+  {
+    "line": 103,
+    "text": "Your brain isn't malicious —",
+    "visual_type": "Mixed",
+    "prompt": "Clearing the brain's name by dressing it up as a pure, innocent angel.\n\nScene: A floating pink brain with wide, sparkly, innocent anime-style dot eyes. A glowing, bright yellow halo floats perfectly over its top. pure white background.\n\nStyle Notes: Absurdly cute character humor, glowing yellow pop against the pink.",
+    "use_reference": true
+  },
+  {
+    "line": 104,
+    "text": "it's just running the most complicated prediction engine in the known universe on extremely limited resources, at insane speed,",
+    "visual_type": "Mixed",
+    "prompt": "The brain desperately running on a tiny hamster wheel connected to a massive supercomputer.\n\nScene: The floating pink brain, sweating profusely with exertion lines, is running frantically inside a classic metal wire hamster wheel. The wheel is hooked up via thick black cables to a massive, imposing, flashing server rack supercomputer. pure white background.\n\nStyle Notes: High kinetic energy, humorous juxtaposition of low-tech struggle driving high-tech output.",
+    "use_reference": true
+  },
+  {
+    "line": 105,
+    "text": "while also keeping your heart beating, your balance maintained, and your embarrassing memories safely stored.",
+    "visual_type": "Mixed",
+    "prompt": "The overworked brain doing a literal juggling act of these three crucial tasks.\n\nScene: The floating pink brain is rapidly juggling three objects: a stylized red heart, a balancing tightrope pole, and a diary locked with a heavy padlock labeled 'CRINGE'. pure white background.\n\nStyle Notes: Circus-style juggling action lines, fast-paced comedic chaos.",
+    "use_reference": true
+  },
+  {
+    "line": 106,
+    "text": "The fact that it mostly works is, honestly, more impressive than the fact that it occasionally cheats.",
+    "visual_type": "Mixed",
+    "prompt": "The brain accepting a gold medal for a job well done, while obviously holding a cheat card behind its back.\n\nScene: The floating pink brain is standing on a high pedestal labeled '1ST', proudly wearing a gold medal around its base. However, behind its back, a tiny thin black hand is holding a playing card (an Ace of Spades) hidden from view. pure white background.\n\nStyle Notes: Heroic but slightly shady framing, character-driven visual joke.",
+    "use_reference": true
+  },
+  {
+    "line": 107,
+    "text": "But maybe — maybe — the next time you're completely certain about something you saw, something you remember, or a decision you think you freely made...",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "The stick figure back to being highly confident and absolutely certain about itself.\n\nScene: simple black stick figure, standing tall with its chest puffed out, hands firmly on hips, wearing a massive, confident, closed-eye smile. A giant checkmark floats above its head to represent complete certainty. pure white background.\n\nStyle Notes: Hubris before the fall, extreme overconfidence.",
+    "use_reference": true
+  },
+  {
+    "line": 108,
+    "text": "leave just a little room for the possibility that the director already called cut before you knew the scene was running.",
+    "visual_type": "Mixed",
+    "prompt": "The illusion of the stick figure's life being shattered by a sudden movie production element ending the scene.\n\nScene: The same extremely confident stick figure, but a massive classic black-and-white movie clapperboard snaps aggressively shut right over its head, squishing its confident posture downward in a slapstick manner. pure white background.\n\nStyle Notes: Meta-filmmaking twist, sharp sudden action, breaking the fourth wall.",
+    "use_reference": true
+  },
+  {
+    "line": 109,
+    "text": "Your brain is extraordinary.",
+    "visual_type": "Mixed",
+    "prompt": "A final moment of genuine reverence for the complex organ we've been making fun of.\n\nScene: A floating pink brain positioned dead center. It is glowing with majestic, warm golden light rays radiating perfectly outward in a circle. pure white background.\n\nStyle Notes: Sincere, awe-inspiring, clean symmetrical composition.",
+    "use_reference": true
+  },
+  {
+    "line": 110,
+    "text": "It's also, without question, been lying to you this whole time.",
+    "visual_type": "Mixed",
+    "prompt": "Immediately undercutting the reverence with a classic symbol of lying.\n\nScene: The floating pink brain is looking directly at the camera with a sly, mischievous wink. A long, wooden, cylindrical Pinocchio-style nose has sprouted from the front of it. pure white background.\n\nStyle Notes: Quick comedic tonal shift, stark punchline image.",
+    "use_reference": true
+  },
+  {
+    "line": 111,
+    "text": "If your brain let you enjoy this — subscribe.",
+    "visual_type": "Concept Visual",
+    "prompt": "A clean, literal call to action using YouTube UI elements.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. A prominent, bold red rectangular 'SUBSCRIBE' button. A large classic white cursor arrow is hovering directly over it, just about to click.\n\nStyle Notes: Standard recognizable UI, high contrast red on white.",
+    "use_reference": false
+  },
+  {
+    "line": 112,
+    "text": "It already decided whether you would.",
+    "visual_type": "Mixed",
+    "prompt": "A final callback to the puppet-master brain controlling the viewer's action.\n\nScene: simple black stick figure looking down in total shock as its own thin black arm moves involuntarily toward a red subscribe button. Thin, glowing green marionette strings attach its wrist straight up to a floating pink brain hovering above, pulling the strings. pure white background.\n\nStyle Notes: Thematic wrap-up, funny unsettling final image.",
+    "use_reference": true
+  }
+]
