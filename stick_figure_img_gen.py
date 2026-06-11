@@ -154,44 +154,60 @@ def main():
             output_dir = f"output/why_brain_is_lying_to_you"
         os.makedirs(f"{output_dir}/scenes", exist_ok=True)
         logger.info(f"Images will be saved to: {output_dir}/scenes")
-        for i, sid in enumerate(scene_ids):
-            logger.info(f"--- Generating image for scene {i+1}/{len(scene_ids)} (Scene ID: {sid}) ---")
-            single_request = {"type": "GENERATE_IMAGE", "scene_id": sid, "project_id": project_id, "video_id": video_id, "orientation": "HORIZONTAL"}
-            batch_res = request("/api/requests/batch", data={"requests": [single_request]})
-            if not batch_res:
-                maybe_abort(f"Batch submission failed for scene {i+1}")
+        logger.info("Submitting all image generation requests in a single batch...")
+        requests_list = []
+        for sid in scene_ids:
+            requests_list.append({
+                "type": "GENERATE_IMAGE",
+                "scene_id": sid,
+                "project_id": project_id,
+                "video_id": video_id,
+                "orientation": "HORIZONTAL"
+            })
+            
+        batch_res = request("/api/requests/batch", data={"requests": requests_list})
+        if not batch_res:
+            maybe_abort("Batch submission failed")
+            
+        logger.info("Batch submitted. Polling batch status...")
+        while True:
+            time.sleep(5)
+            status_data = request(f"/api/requests/batch-status?video_id={video_id}&type=GENERATE_IMAGE", method="GET")
+            if not status_data:
                 continue
-            logger.info("Request submitted. Polling scene status...")
-            while True:
-                time.sleep(3)
-                scene_data = request(f"/api/scenes/{sid}", method="GET")
-                if not scene_data:
-                    logger.warning(f"Failed to fetch scene {sid} details, retrying...")
-                    continue
-                status = scene_data.get("horizontal_image_status")
-                img_url = scene_data.get("horizontal_image_url")
-                logger.info(f"Scene {i+1} status: {status}")
-                if status == "COMPLETED":
-                    if img_url and img_url.startswith("http"):
-                        dest_file = f"{output_dir}/scenes/scene_{i+1:03d}_{sid}.jpg"
-                        logger.info(f"Downloading completed image to {dest_file}...")
-                        try:
-                            req = urllib.request.Request(img_url, headers={"User-Agent": "Mozilla/5.0"})
-                            with urllib.request.urlopen(req) as response, open(dest_file, 'wb') as out_file:
-                                out_file.write(response.read())
-                            logger.info("Downloaded successfully")
-                        except Exception as e:
-                            logger.error(f"Failed to download image: {e}")
-                    else:
-                        logger.warning(f"Image completed but URL missing/invalid: {img_url}")
-                    break
-                elif status == "FAILED":
-                    maybe_abort(f"Image generation failed for scene {i+1}")
-                    break
-            if i < len(scene_ids) - 1:
-                logger.info("Waiting 20 seconds cooldown before next image...")
-                time.sleep(20)
-        logger.info("All image generation requests and downloads processed.")
+            
+            total = status_data.get("total", 0)
+            completed = status_data.get("completed", 0)
+            failed = status_data.get("failed", 0)
+            done = status_data.get("done", False)
+            
+            logger.info(f"Batch status: {completed}/{total} completed, {failed} failed. Done: {done}")
+            
+            if done:
+                break
+                
+        logger.info("All image generations finished. Downloading images...")
+        
+        for i, sid in enumerate(scene_ids):
+            scene_data = request(f"/api/scenes/{sid}", method="GET")
+            if not scene_data:
+                continue
+            status = scene_data.get("horizontal_image_status")
+            img_url = scene_data.get("horizontal_image_url")
+            
+            if status == "COMPLETED" and img_url and img_url.startswith("http"):
+                dest_file = f"{output_dir}/scenes/scene_{i+1:03d}_{sid}.jpg"
+                logger.info(f"Downloading {dest_file}...")
+                try:
+                    req = urllib.request.Request(img_url, headers={"User-Agent": "Mozilla/5.0"})
+                    with urllib.request.urlopen(req) as response, open(dest_file, 'wb') as out_file:
+                        out_file.write(response.read())
+                except Exception as e:
+                    logger.error(f"Failed to download image: {e}")
+            elif status == "FAILED":
+                logger.warning(f"Image generation failed for scene {i+1}")
+                
+        logger.info("All image downloads processed.")
     except PipelineError as e:
         logger.exception(f"Pipeline encountered an error: {e}")
         if args.stop_on_error:
