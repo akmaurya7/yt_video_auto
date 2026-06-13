@@ -88,9 +88,9 @@ def main():
     try:
         logger.info("Creating project...")
         proj_res = request("/api/projects", data={
-            "name": "megastructure_generation",
-            "description": "Generating a megastructure video in 9:16 aspect ratio",
-            "story": "A slow cinematic reveal of a massive megastructure.",
+            "name": "great_pyramid",
+            "description": "Generating a Great Pyramid video in 9:16 aspect ratio",
+            "story": "A slow cinematic reveal of a Great Pyramid.",
             "material": "nano_banana_2",
             "characters": []
         })
@@ -123,29 +123,12 @@ def main():
         if isinstance(prompts, dict):
             prompts = [prompts]
             
-        scene_ids = []
-        for i, p in enumerate(prompts):
-            scene_res = request("/api/scenes", data={
-                "video_id": video_id,
-                "display_order": i,
-                "prompt": p.get('img_prompt', ''),
-                "video_prompt": p.get('video_prompt', ''),
-                "narrator_text": p.get('text', ''),
-                "character_names": [],
-                "chain_type": "ROOT"
-            })
-            if scene_res and 'id' in scene_res:
-                scene_ids.append(scene_res['id'])
-                logger.info(f"Created scene {i+1}/{len(prompts)}: {scene_res['id']}")
-            else:
-                maybe_abort(f"Failed to create scene {i+1}")
-                
         logger.info("Fetching output directory details...")
         out_dir_res = request(f"/api/projects/{project_id}/output-dir", method="GET")
         if out_dir_res and 'path' in out_dir_res:
             output_dir = out_dir_res['path']
         else:
-            output_dir = f"output/megastructure_generation"
+            output_dir = f"output/great_pyramid"
             
         os.makedirs(f"{output_dir}/scenes", exist_ok=True)
         logger.info(f"Assets will be saved to: {output_dir}/scenes")
@@ -153,115 +136,122 @@ def main():
         # We want 9:16 aspect ratio
         ori = "VERTICAL"
         
-        logger.info(f"Submitting GENERATE_IMAGE requests ({ori})...")
-        img_requests = []
-        for sid in scene_ids:
-            img_requests.append({
+        for i, p in enumerate(prompts):
+            logger.info(f"--- Processing Scene {i+1}/{len(prompts)} ---")
+            
+            # 0. Create Scene
+            scene_res = request("/api/scenes", data={
+                "video_id": video_id,
+                "display_order": i,
+                "prompt": p.get('img_prompt', ''),
+                "video_prompt": p.get('vid_prompt', p.get('video_prompt', '')),
+                "narrator_text": p.get('text', ''),
+                "character_names": [],
+                "chain_type": "ROOT"
+            })
+            if not scene_res or 'id' not in scene_res:
+                maybe_abort(f"Failed to create scene {i+1}")
+                continue
+                
+            sid = scene_res['id']
+            logger.info(f"Created scene {i+1}: {sid}")
+            
+            # 1. Generate Image
+            logger.info(f"Submitting GENERATE_IMAGE request ({ori})...")
+            batch_res = request("/api/requests/batch", data={"requests": [{
                 "type": "GENERATE_IMAGE",
                 "scene_id": sid,
                 "project_id": project_id,
                 "video_id": video_id,
                 "orientation": ori
-            })
-            
-        batch_res = request("/api/requests/batch", data={"requests": img_requests})
-        if not batch_res:
-            maybe_abort("Image Batch submission failed")
-            
-        logger.info("Polling GENERATE_IMAGE batch status...")
-        while True:
-            time.sleep(5)
-            status_data = request(f"/api/requests/batch-status?video_id={video_id}&type=GENERATE_IMAGE", method="GET")
-            if not status_data:
-                continue
-            
-            total = status_data.get("total", 0)
-            completed = status_data.get("completed", 0)
-            failed = status_data.get("failed", 0)
-            done = status_data.get("done", False)
-            
-            logger.info(f"Image status: {completed}/{total} completed, {failed} failed. Done: {done}")
-            
-            if done:
-                break
+            }]})
+            if not batch_res:
+                maybe_abort("Image submission failed")
                 
-        logger.info(f"Submitting GENERATE_VIDEO requests ({ori})...")
-        vid_requests = []
-        for sid in scene_ids:
-            vid_requests.append({
+            logger.info("Polling GENERATE_IMAGE status...")
+            attempts = 0
+            while attempts < 60:  # 5 minutes timeout (60 * 5s)
+                time.sleep(5)
+                attempts += 1
+                status_data = request(f"/api/requests/batch-status?video_id={video_id}&type=GENERATE_IMAGE", method="GET")
+                if not status_data:
+                    continue
+                done = status_data.get("done", False)
+                if done:
+                    break
+            if attempts >= 60:
+                logger.warning(f"Timeout waiting for image for scene {sid}. Proceeding to check status.")
+                    
+            # 2. Generate Video
+            logger.info(f"Submitting GENERATE_VIDEO request ({ori})...")
+            batch_res = request("/api/requests/batch", data={"requests": [{
                 "type": "GENERATE_VIDEO",
                 "scene_id": sid,
                 "project_id": project_id,
                 "video_id": video_id,
                 "orientation": ori
-            })
-            
-        batch_res = request("/api/requests/batch", data={"requests": vid_requests})
-        if not batch_res:
-            maybe_abort("Video Batch submission failed")
-            
-        logger.info("Polling GENERATE_VIDEO batch status...")
-        while True:
-            time.sleep(10)
-            status_data = request(f"/api/requests/batch-status?video_id={video_id}&type=GENERATE_VIDEO", method="GET")
-            if not status_data:
-                continue
-            
-            total = status_data.get("total", 0)
-            completed = status_data.get("completed", 0)
-            failed = status_data.get("failed", 0)
-            done = status_data.get("done", False)
-            
-            logger.info(f"Video status: {completed}/{total} completed, {failed} failed. Done: {done}")
-            
-            if done:
-                break
+            }]})
+            if not batch_res:
+                maybe_abort("Video submission failed")
                 
-        logger.info("All generations finished. Downloading assets...")
-        
-        for i, sid in enumerate(scene_ids):
+            logger.info("Polling GENERATE_VIDEO status...")
+            attempts = 0
+            while attempts < 60:  # 10 minutes timeout (60 * 10s)
+                time.sleep(10)
+                attempts += 1
+                status_data = request(f"/api/requests/batch-status?video_id={video_id}&type=GENERATE_VIDEO", method="GET")
+                if not status_data:
+                    continue
+                done = status_data.get("done", False)
+                if done:
+                    break
+            if attempts >= 60:
+                logger.warning(f"Timeout waiting for video for scene {sid}. Proceeding to check status.")
+                    
+            # 3. Download Assets
             scene_data = request(f"/api/scenes/{sid}", method="GET")
-            if not scene_data:
-                continue
-                
-            # Download Image
-            img_status = scene_data.get("vertical_image_status")
-            img_url = scene_data.get("vertical_image_url")
-            
-            if img_status == "COMPLETED" and img_url and img_url.startswith("http"):
-                dest_file = f"{output_dir}/scenes/scene_{i+1:03d}_{sid}.jpg"
-                logger.info(f"Downloading image {dest_file}...")
-                try:
-                    req = urllib.request.Request(img_url, headers={"User-Agent": "Mozilla/5.0"})
-                    with urllib.request.urlopen(req) as response, open(dest_file, 'wb') as out_file:
-                        out_file.write(response.read())
-                except Exception as e:
-                    logger.error(f"Failed to download image: {e}")
-            elif img_status == "FAILED":
-                logger.warning(f"Image generation failed for scene {i+1}")
-                
-            # Download Video
-            vid_status = scene_data.get("vertical_video_status")
-            vid_url = scene_data.get("vertical_video_url")
-            
-            if vid_status == "COMPLETED" and vid_url:
-                dest_file = f"{output_dir}/scenes/scene_{i+1:03d}_{sid}.mp4"
-                logger.info(f"Downloading video {dest_file}...")
-                try:
-                    if vid_url.startswith("http"):
-                        req = urllib.request.Request(vid_url, headers={"User-Agent": "Mozilla/5.0"})
+            if scene_data:
+                # Download Image
+                img_status = scene_data.get("vertical_image_status")
+                img_url = scene_data.get("vertical_image_url")
+                if img_status == "COMPLETED" and img_url and img_url.startswith("http"):
+                    dest_file = f"{output_dir}/scenes/scene_{i+1:03d}_{sid}.jpg"
+                    logger.info(f"Downloading image {dest_file}...")
+                    try:
+                        req = urllib.request.Request(img_url, headers={"User-Agent": "Mozilla/5.0"})
                         with urllib.request.urlopen(req) as response, open(dest_file, 'wb') as out_file:
                             out_file.write(response.read())
-                    elif vid_url.startswith("file://"):
-                        import shutil
-                        src_file = vid_url.replace("file://", "")
-                        shutil.copy(src_file, dest_file)
-                except Exception as e:
-                    logger.error(f"Failed to download video: {e}")
-            elif vid_status == "FAILED":
-                logger.warning(f"Video generation failed for scene {i+1}")
+                    except Exception as e:
+                        logger.error(f"Failed to download image: {e}")
+                elif img_status == "FAILED":
+                    logger.warning(f"Image generation failed for scene {i+1}")
+                    
+                # Download Video
+                vid_status = scene_data.get("vertical_video_status")
+                vid_url = scene_data.get("vertical_video_url")
+                if vid_status == "COMPLETED" and vid_url:
+                    dest_file = f"{output_dir}/scenes/scene_{i+1:03d}_{sid}.mp4"
+                    logger.info(f"Downloading video {dest_file}...")
+                    try:
+                        if vid_url.startswith("http"):
+                            req = urllib.request.Request(vid_url, headers={"User-Agent": "Mozilla/5.0"})
+                            with urllib.request.urlopen(req) as response, open(dest_file, 'wb') as out_file:
+                                out_file.write(response.read())
+                        elif vid_url.startswith("file://"):
+                            import shutil
+                            src_file = vid_url.replace("file://", "")
+                            shutil.copy(src_file, dest_file)
+                    except Exception as e:
+                        logger.error(f"Failed to download video: {e}")
+                elif vid_status == "FAILED":
+                    logger.warning(f"Video generation failed for scene {i+1}")
+                    
+            # 4. Wait 60 seconds before next scene (if not the last one)
+            if i < len(prompts) - 1:
+                logger.info("Waiting 60 seconds before processing next scene to avoid unusual activity errors...")
+                time.sleep(60)
                 
-        logger.info("All assets downloaded successfully.")
+        logger.info("All scenes processed and downloaded successfully.")
         
     except PipelineError as e:
         logger.exception(f"Pipeline encountered an error: {e}")

@@ -19,6 +19,16 @@ from agent.services.headers import random_headers
 
 logger = logging.getLogger(__name__)
 
+_global_session_id = f";{int(time.time() * 1000)}"
+_global_session_ts = time.time()
+
+def _get_stable_session_id() -> str:
+    global _global_session_id, _global_session_ts
+    if time.time() - _global_session_ts > 1800:  # 30 min refresh
+        _global_session_id = f";{int(time.time() * 1000)}"
+        _global_session_ts = time.time()
+    return _global_session_id
+
 
 class FlowClient:
     """Sends commands to Chrome extension via WebSocket."""
@@ -248,7 +258,7 @@ class FlowClient:
                 "applicationType": "RECAPTCHA_APPLICATION_TYPE_WEB",
                 "token": "",  # Extension injects real token
             },
-            "sessionId": f";{int(time.time() * 1000)}",
+            "sessionId": _get_stable_session_id(),
             "tool": "PINHOLE",
             "userPaygateTier": user_paygate_tier,
         }
@@ -290,7 +300,7 @@ class FlowClient:
         ctx = self._client_context(project_id, user_paygate_tier)
 
         request_item = {
-            "clientContext": {**ctx, "sessionId": f";{ts}"},
+            "clientContext": ctx,
             "seed": ts % 1000000,
             "structuredPrompt": {"parts": [{"text": prompt}]},
             "imageAspectRatio": aspect_ratio,
@@ -344,7 +354,7 @@ class FlowClient:
                 image_inputs.append({"name": mid, "imageInputType": "IMAGE_INPUT_TYPE_REFERENCE"})
 
         request_item = {
-            "clientContext": {**ctx, "sessionId": f";{ts}"},
+            "clientContext": ctx,
             "seed": ts % 1000000,
             "structuredPrompt": {"parts": [{"text": prompt}]},
             "imageAspectRatio": aspect_ratio,
@@ -468,7 +478,7 @@ class FlowClient:
 
         body = {
             "clientContext": {
-                "sessionId": f";{int(time.time() * 1000)}",
+                "sessionId": _get_stable_session_id(),
                 "recaptchaContext": {
                     "applicationType": "RECAPTCHA_APPLICATION_TYPE_WEB",
                     "token": "",

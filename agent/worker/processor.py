@@ -450,12 +450,20 @@ async def _handle_failure(rid: str, req: dict, result: dict, retry_after: dict =
         logger.info("Request %s transient WS error, will retry (no retry increment): %s", rid[:8], error_msg)
         return
 
-    # reCAPTCHA errors: retry up to 10 times — deferred dict in main loop handles delay
+    # reCAPTCHA errors: retry up to 10 times
     if "captcha" in error_lower or "recaptcha" in error_lower:
         retry = req.get("retry_count", 0) + 1
         if retry < 10:
+            now = time.time()
+            if retry_after is not None:
+                # Add an exponential backoff specifically for recaptcha/unusual activity
+                ra = retry_after.get(rid, 0.0)
+                if ra > now:
+                    await crud.update_request(rid, status="PENDING", error_message=str(error_msg))
+                    return
+                retry_after[rid] = now + min(2 ** retry * 15, 600)  # 30s, 60s, 120s... max 10 mins
             await crud.update_request(rid, status="PENDING", retry_count=retry, error_message=str(error_msg))
-            logger.warning("Request %s reCAPTCHA failed (retry %d/10), will retry", rid[:8], retry)
+            logger.warning("Request %s reCAPTCHA failed (retry %d/10), will retry after backoff", rid[:8], retry)
             return
         else:
             await crud.update_request(rid, status="FAILED", error_message=str(error_msg))
