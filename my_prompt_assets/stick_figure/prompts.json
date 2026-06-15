@@ -1,415 +1,478 @@
 [
   {
-    "line": 54,
-    "text": "Most people imagine memory like a filing cabinet.",
+    "line": 1,
+    "text": "Right now, sitting inside your skull,",
+    "visual_type": "Mixed",
+    "prompt": "Show a transparent view of the brain inside the head.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, minimal curved mouth showing a neutral expression. The stick figure is pointing a finger at its own head. Inside the circle head, there is a glowing pink, clean minimal flat illustration of a human brain. 16:9 horizontal format, pure white background, subject centered.\n\nStyle Notes: High contrast between the black stick figure lines and the bright pink brain illustration.",
+    "use_reference": true
+  },
+  {
+    "line": 2,
+    "text": "is the biological equivalent of putting a garbage disposal next to a smoke detector.",
     "visual_type": "Concept Visual",
-    "prompt": "Establish the mundane, rigid misconception of memory using a literal office item.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. A tall, pristine, grey metal office filing cabinet stands perfectly straight in the center. Bold text 'MEMORY' is written on the top drawer.\n\nStyle Notes: Sterile, boring, hyper-organized aesthetic to emphasize the incorrect mental model.",
+    "prompt": "A literal visual metaphor of the two incompatible appliances sitting side-by-side.\n\nScene: Clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style. On the left, a metallic sink garbage disposal unit. Right next to it on the right, a white plastic smoke detector with a flashing red light. 16:9 horizontal format, pure white background, no clutter.\n\nStyle Notes: Flat colors, simple geometry, clear visual joke showing two completely unrelated objects forced together.",
+    "use_reference": false
+  },
+  {
+    "line": 3,
+    "text": "You are the undisputed apex predator of planet Earth,",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "A stick figure posing victoriously as the king of the world.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, minimal curved mouth showing a proud, arrogant smile. The stick figure is wearing a simple golden crown on its head and standing triumphantly on top of a minimalist line-drawing of the Earth. Arms are raised in a V-shape for victory. 16:9 horizontal format, pure white background.\n\nStyle Notes: Minimalist black and white with a pop of gold for the crown.",
+    "use_reference": true
+  },
+  {
+    "line": 4,
+    "text": "capable of splitting the atom and sending rovers to Mars,",
+    "visual_type": "Mixed",
+    "prompt": "The stick figure demonstrating ultimate scientific power.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, showing a confident expression. The figure is standing center. In its left hand, it holds a glowing blue atom with orbiting electrons (clean minimal flat illustration). In its right hand, it holds a remote control, pointing it at a tiny, cute, flat-illustration Mars rover rolling next to its feet. 16:9 horizontal format, pure white background.\n\nStyle Notes: Clean educational diagram style for the atom and rover, contrasting with the simple stick figure.",
+    "use_reference": true
+  },
+  {
+    "line": 5,
+    "text": "but you can be easily assassinated by a slightly dry piece of chicken.",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "The proud apex predator is suddenly brought down by a tiny piece of food.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, minimal curved mouth showing extreme panic and a horrified expression. The stick figure is hunched over, clutching its own throat with both hands, visibly choking. On the floor next to it is a clean, minimal line drawing of a plate with a single, small piece of dry roasted chicken. 16:9 horizontal format, pure white background.\n\nStyle Notes: Exaggerated panic body language.",
+    "use_reference": true
+  },
+  {
+    "line": 6,
+    "text": "We like to think of human evolution as a masterpiece of biological engineering.",
+    "visual_type": "Mixed",
+    "prompt": "The stick figure posed like Da Vinci's Vitruvian Man.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes. The figure is drawn with four arms and four legs in the classic Vitruvian Man pose, enclosed inside a perfect, glowing golden circle and square (clean minimal flat illustration style). 16:9 horizontal format, pure white background.\n\nStyle Notes: Majestic, mathematical, precise geometry mixed with stick figure simplicity.",
+    "use_reference": true
+  },
+  {
+    "line": 7,
+    "text": "A glorious, deliberate march from ape to Aristotle.",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "A simplified, stick-figure version of the classic 'March of Progress' illustration.\n\nScene: A line of simple black stick figures walking from left to right. Far left: a stick figure walking on all fours like an ape. Middle: a hunched stick figure holding a spear. Right: a perfectly upright stick figure proudly wearing a Greek toga and holding a philosophical scroll, dot eyes looking wise and content. 16:9 horizontal format, a single thin horizontal black line representing the ground, pure white background.\n\nStyle Notes: Clear left-to-right evolutionary progression.",
+    "use_reference": true
+  },
+  {
+    "line": 8,
+    "text": "The reality? Evolution is less like a master architect",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "A professional-looking stick figure holding pristine plans.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, minimal curved mouth showing a confident, professional smile. The figure is wearing a yellow construction hard hat and holding a perfectly unrolled, pristine blue blueprint. 16:9 horizontal format, pure white background.\n\nStyle Notes: Neat, organized, calm.",
+    "use_reference": true
+  },
+  {
+    "line": 9,
+    "text": "and more like a lazy contractor who just keeps building over the old stuff because he lost the original blueprints.",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "A chaotic contractor haphazardly fixing things.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, minimal curved mouth showing a confused, panicked expression. The figure is frantically wrapping grey duct tape around a messy, leaking pipe joint. Crumpled up pieces of paper (lost blueprints) are scattered everywhere on the floor. 16:9 horizontal format, a single thin horizontal line for the floor, pure white background.\n\nStyle Notes: Chaotic energy, messy, incompetent.",
+    "use_reference": true
+  },
+  {
+    "line": 10,
+    "text": "Nature does not care about perfection.",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "Throwing away the concept of being perfect.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, neutral expression. The stick figure is casually tossing a shiny golden trophy into a simple grey trash can. Large, bold text on the trophy reads 'PERFECTION'. 16:9 horizontal format, pure white background.\n\nStyle Notes: Casual, dismissive body language.",
+    "use_reference": true
+  },
+  {
+    "line": 11,
+    "text": "It only cares about 'good enough to pass on your genes before you die.'",
+    "visual_type": "Mixed",
+    "prompt": "Barely squeezing under a low bar holding a baby.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, mouth showing deep exhaustion, sweating. The figure is crawling on its stomach to barely squeeze under a physical limbo bar. The bar is supported by two stands. The stick figure is dragging a tiny baby stick figure safely underneath with it. Large, bold, clean text on the bar reads 'SURVIVAL'. 16:9 horizontal format, single thin line for the ground, pure white background.\n\nStyle Notes: Struggle, barely making it, comedic exhaustion.",
+    "use_reference": true
+  },
+  {
+    "line": 12,
+    "text": "And unfortunately for us, that low bar means your physical body is packed full of absolutely terrible design choices.",
+    "visual_type": "Concept Visual",
+    "prompt": "An anatomy diagram showing a disastrously bad plumbing system.\n\nScene: Clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style. An outline of a human torso. Inside the torso, instead of organs, there is a chaotic, tangled mess of overlapping PVC pipes, loose wires, tangled hoses, and upside-down funnels. 16:9 horizontal format, pure white background, no clutter.\n\nStyle Notes: Humorous complexity, looking like a terrible DIY plumbing disaster inside a body outline.",
+    "use_reference": false
+  },
+  {
+    "line": 13,
+    "text": "Let’s start with that dry piece of chicken.",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "Investigating the tiny, deadly culprit.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, minimal curved mouth showing a suspicious, squinting expression. The figure is holding a massive, oversized magnifying glass, inspecting a single, small piece of dry chicken resting on a clean white plate. 16:9 horizontal format, pure white background.\n\nStyle Notes: Focus on the exaggerated size of the magnifying glass to show intense scrutiny.",
+    "use_reference": true
+  },
+  {
+    "line": 14,
+    "text": "Why do we choke?",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "Utter confusion about our own biological failings.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, minimal curved mouth showing a highly confused expression. The figure has both arms raised in a classic shrugging pose. A giant, bold black question mark hovers directly above its head. 16:9 horizontal format, pure white background.\n\nStyle Notes: Pure minimalist expression of bewilderment.",
+    "use_reference": true
+  },
+  {
+    "line": 15,
+    "text": "Because whoever wired our throat decided the tube for breathing and the tube for eating should share the exact same hallway.",
+    "visual_type": "Concept Visual",
+    "prompt": "A ridiculously crowded hallway functioning as a throat.\n\nScene: Clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style. A literal narrow hallway. A cartoonish blue gust of wind (representing air) and a brown hamburger (representing food) are comically wedged together, trying to squeeze through the exact same narrow single door at the end of the hall. 16:9 horizontal format, pure white background, no clutter.\n\nStyle Notes: Humorous literal translation of anatomical stupidity.",
+    "use_reference": false
+  },
+  {
+    "line": 16,
+    "text": "Your trachea and esophagus open into the same shared space: the pharynx.",
+    "visual_type": "Concept Visual",
+    "prompt": "A literal Y-shaped pipe showing the terrible anatomical junction.\n\nScene: Clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style. A Y-shaped industrial pipe. The left branch is labeled \"TRACHEA\" and the right branch is labeled \"ESOPHAGUS\" in bold black text. They merge at the top into a single, crowded opening labeled \"PHARYNX\". 16:9 horizontal format, pure white background, no clutter.\n\nStyle Notes: Clean, clear, and perfectly symmetrical to highlight the shared space.",
+    "use_reference": false
+  },
+  {
+    "line": 17,
+    "text": "Every single time you swallow,",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "The high stakes of simply taking a bite.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, mouth wide open like a cavern. The stick figure has its eyes squeezed shut and sweat flying off its forehead, looking incredibly nervous. A large, cartoonish bite of food is suspended in mid-air, just about to drop into its mouth. 16:9 horizontal format, pure white background.\n\nStyle Notes: Tension and anticipation of an everyday action.",
+    "use_reference": true
+  },
+  {
+    "line": 18,
+    "text": "a tiny flap of cartilage called the epiglottis has to slam shut over your windpipe so you do not drown in your own lunch.",
+    "visual_type": "Mixed",
+    "prompt": "A microscopic stick figure desperately operating safety machinery inside the throat.\n\nScene: A simple black stick figure, drawn very small, wearing a tiny hard hat. The figure is frantically pulling a giant, heavy lever down. The lever is attached to a thick, flat flap (the epiglottis, drawn as a clean minimal flat illustration) that is slamming shut over a dark circular pipe, just as a hamburger falls from above. 16:9 horizontal format, pure white background.\n\nStyle Notes: Frantic, desperate energy. Contrasting the black stick figure with simple colored diagram shapes.",
+    "use_reference": true
+  },
+  {
+    "line": 19,
+    "text": "It is the civic planning equivalent of putting a highway on-ramp directly across an active airport runway.",
+    "visual_type": "Concept Visual",
+    "prompt": "The world's worst urban planning decision.\n\nScene: Clean minimal flat illustration, simple bold shapes, thick outlines. An aerial view of a dark grey airport runway. Perpendicular to it, completely bisecting the runway, is a grey highway with white dashed lines. A flat illustration of a red car is driving on the highway directly into the path of a white airplane speeding down the runway. 16:9 horizontal format, pure white background, no clutter.\n\nStyle Notes: Stark, simple geometry emphasizing the disastrous intersection.",
+    "use_reference": false
+  },
+  {
+    "line": 20,
+    "text": "If the timing is off by a fraction of a second, tragedy strikes.",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "Watching the timer run out on a terrible disaster.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, minimal curved mouth showing sheer, unadulterated horror. The figure is standing in the foreground holding a large stopwatch. In the minimal background, a massive cartoonish explosion cloud (clean, flat, orange/yellow shape) expands behind them. 16:9 horizontal format, single thin line for ground, pure white background.\n\nStyle Notes: Foreground detail vs background minimal chaos.",
+    "use_reference": true
+  },
+  {
+    "line": 21,
+    "text": "Dolphins do not have this problem.",
+    "visual_type": "Mixed",
+    "prompt": "Jealousy directed at a perfectly evolved aquatic mammal.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, minimal curved mouth showing a grumpy, annoyed expression with arms crossed. Next to the stick figure is a clean minimal flat illustration of a very happy, smug-looking grey dolphin with a shining halo over its head. 16:9 horizontal format, pure white background.\n\nStyle Notes: The contrast between human annoyance and dolphin perfection.",
+    "use_reference": true
+  },
+  {
+    "line": 22,
+    "text": "Their blowhole is completely separate from their mouth, meaning they can eat and breathe safely at the same time.",
+    "visual_type": "Concept Visual",
+    "prompt": "Anatomical proof of dolphin superiority.\n\nScene: Clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style. A cross-section diagram of a dolphin head. A blue arrow swoops gracefully into the blowhole on top, labeled \"AIR\". A completely separate, unconnected path shows a small orange fish sliding smoothly into the mouth, labeled \"FOOD\". 16:9 horizontal format, pure white background, no clutter.\n\nStyle Notes: Serene, logical, perfectly safe pathways.",
+    "use_reference": false
+  },
+  {
+    "line": 23,
+    "text": "But you?",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "The realization of one's own biological vulnerability.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, minimal curved mouth showing a shocked, almost offended expression. The figure is pointing aggressively at its own chest with both index fingers. 16:9 horizontal format, pure white background.\n\nStyle Notes: Intense, highly personal pointing.",
+    "use_reference": true
+  },
+  {
+    "line": 24,
+    "text": "You risk death every time you eat a bagel.",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "Treating a standard breakfast carb like a live explosive.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, mouth drawn as a wide zig-zag line showing absolute terror. The figure is sweating profusely and holding a plain bagel out in front of itself with both hands, arms fully extended, as if the bagel is a ticking time bomb about to detonate. 16:9 horizontal format, pure white background.\n\nStyle Notes: Exaggerated fear directed at a completely harmless object.",
+    "use_reference": true
+  },
+  {
+    "line": 25,
+    "text": "But the throat intersection is just sloppy.",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "Harshly judging the previous anatomical design.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, minimal curved mouth showing a disappointed, unimpressed expression. The figure is standing with hands on its hips, looking at a crumpled blueprint on the floor labeled 'THROAT'. 16:9 horizontal format, pure white background.\n\nStyle Notes: Disdainful body language.",
+    "use_reference": true
+  },
+  {
+    "line": 26,
+    "text": "The Recurrent Laryngeal Nerve is actively trolling us.",
+    "visual_type": "Mixed",
+    "prompt": "A biological component acting like a malicious internet troll.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, minimal curved mouth showing severe annoyance. The stick figure is swatting at a long, squiggly yellow nerve cord (clean minimal flat illustration) that has a cartoonish, mischievous laughing face at its end, dangling right in front of the stick figure's face. 16:9 horizontal format, pure white background.\n\nStyle Notes: Humorous contrast between the annoyed human and the sentient, annoying nerve.",
+    "use_reference": true
+  },
+  {
+    "line": 27,
+    "text": "This is the nerve that tells your voice box what to do.",
+    "visual_type": "Concept Visual",
+    "prompt": "The chain of command for speaking.\n\nScene: Clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style. On the left, a pink brain shape. A yellow cord connects it to a grey, mechanical-looking box on the right labeled 'VOICE BOX'. A speech bubble with musical notes comes out of the box. 16:9 horizontal format, pure white background, no clutter.\n\nStyle Notes: Very literal visual translation of biological function.",
+    "use_reference": false
+  },
+  {
+    "line": 28,
+    "text": "It starts in your brain, and the voice box is right there in your neck.",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "Demonstrating the obvious, short distance on one's own body.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, minimal curved mouth showing a confident, matter-of-fact expression. The figure's left hand is tapping the top of its own head, and its right hand is pointing directly to its own neck. 16:9 horizontal format, pure white background.\n\nStyle Notes: Clear, logical pointing.",
+    "use_reference": true
+  },
+  {
+    "line": 29,
+    "text": "A straight drop. Two inches, tops.",
+    "visual_type": "Concept Visual",
+    "prompt": "Measuring the incredibly short, logical gap.\n\nScene: Clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style. A dotted straight vertical line connects a brain icon at the top to a throat icon just below it. Next to the dotted line is a yellow wooden ruler with bold text reading '2 INCHES'. 16:9 horizontal format, pure white background, no clutter.\n\nStyle Notes: Emphasizing shortness and directness.",
+    "use_reference": false
+  },
+  {
+    "line": 30,
+    "text": "Instead, this nerve leaves your brain, travels all the way down into your chest,",
+    "visual_type": "Mixed",
+    "prompt": "Following the nerve's absurd downward journey.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, mouth forming a small 'o' of confusion. The stick figure is watching a thick yellow line (the nerve) exit a floating brain icon, bypass the neck area entirely, and plunge straight down toward the bottom of the frame. 16:9 horizontal format, pure white background.\n\nStyle Notes: The visual focus is on the yellow line completely missing its obvious target.",
+    "use_reference": true
+  },
+  {
+    "line": 31,
+    "text": "loops underneath the aorta of your heart,",
+    "visual_type": "Concept Visual",
+    "prompt": "The ridiculous U-turn around the heart.\n\nScene: Clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style. A large, stylized red heart with a prominent arched aorta on top. The thick yellow nerve cord comes down from above, hooks clumsily completely underneath the aorta in a deep U-turn, and points back upwards. 16:9 horizontal format, pure white background, no clutter.\n\nStyle Notes: Clear medical diagram style but highlighting the absurdity of the detour.",
+    "use_reference": false
+  },
+  {
+    "line": 32,
+    "text": "and then travels all the way back up your neck to reach your vocal cords.",
+    "visual_type": "Mixed",
+    "prompt": "Exhausted from the unnecessary round trip.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, minimal curved mouth showing deep exhaustion, panting with sweat drops. The stick figure is holding the end of the wildly long, tangled yellow nerve cord, finally plugging it into a small voice box icon in its neck, looking incredibly tired from dragging it so far. 16:9 horizontal format, pure white background.\n\nStyle Notes: Comedic exhaustion from biological inefficiency.",
+    "use_reference": true
+  },
+  {
+    "line": 33,
+    "text": "Why? Because we evolved from fish.",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "Confronting our aquatic ancestry.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, minimal curved mouth showing an unamused, deadpan expression. The stick figure is wearing a ridiculous, oversized flat-illustration fish costume that covers its torso, leaving its stick arms and legs poking out. 16:9 horizontal format, pure white background.\n\nStyle Notes: Absurd costume humor.",
+    "use_reference": true
+  },
+  {
+    "line": 34,
+    "text": "In ancient fish, this nerve went straight past the heart to the gills.",
+    "visual_type": "Concept Visual",
+    "prompt": "The logical layout in a fish.\n\nScene: Clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style. A simple outline of a fish facing left. Inside, a yellow line goes straight from the brain, right past a red heart, and directly into the pink gills in a perfectly straight, logical line. 16:9 horizontal format, pure white background, no clutter.\n\nStyle Notes: Showing that it used to make perfect sense.",
+    "use_reference": false
+  },
+  {
+    "line": 35,
+    "text": "As our ancestors evolved necks,",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "Physically growing a neck in real-time.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, minimal curved mouth showing a strained, wide-eyed expression. The figure's neck is comically stretched out like a long tube of taffy, with the figure's hands pulling its own head upward. 16:9 horizontal format, pure white background.\n\nStyle Notes: Exaggerated cartoon stretching.",
+    "use_reference": true
+  },
+  {
+    "line": 36,
+    "text": "the heart moved down into the chest, and the nerve just got dragged along with it",
+    "visual_type": "Concept Visual",
+    "prompt": "The heart pulling the nerve down like a weight.\n\nScene: Clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style. A heavy-looking red heart icon is falling downwards, dragging a stretchy yellow nerve cord down with it, pulling it into a deep V-shape. Motion lines indicate the heart moving down. 16:9 horizontal format, pure white background, no clutter.\n\nStyle Notes: Highlighting the physical dragging of the biology.",
+    "use_reference": false
+  },
+  {
+    "line": 37,
+    "text": "because evolution never bothers to reroute the wiring.",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "The lazy biological contractor ignoring the mess.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, minimal curved mouth showing a relaxed, lazy smile. The figure is wearing a construction hard hat and sleeping in a lawn chair. Behind the figure is a massive, tangled disaster of yellow electrical cords. 16:9 horizontal format, pure white background.\n\nStyle Notes: Utter negligence and laziness.",
+    "use_reference": true
+  },
+  {
+    "line": 38,
+    "text": "If you think that is annoying for you, spare a thought for the giraffe.",
+    "visual_type": "Mixed",
+    "prompt": "Looking up at a creature with an even bigger biological problem.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, minimal curved mouth showing a highly sympathetic, cringing expression. The stick figure is looking straight up. Next to the stick figure is a clean minimal flat illustration of just the very bottom of a giraffe's front legs, implying the massive height of the animal extending out of frame. 16:9 horizontal format, pure white background.\n\nStyle Notes: Using framing to emphasize extreme scale.",
+    "use_reference": true
+  },
+  {
+    "line": 39,
+    "text": "A giraffe's recurrent laryngeal nerve has to travel 15 feet down its neck and back up again, just to bridge a gap of a few inches.",
+    "visual_type": "Concept Visual",
+    "prompt": "The ultimate biological detour in a giraffe neck.\n\nScene: Clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style. An extremely elongated silhouette of a giraffe. Inside, a ridiculous yellow line starts at the head, drops all the way down the ridiculously long neck to the chest, loops, and goes all the way back up to the throat. Bold text says '15 FEET'. 16:9 horizontal format, pure white background, no clutter.\n\nStyle Notes: Comedic exaggeration of the length.",
+    "use_reference": false
+  },
+  {
+    "line": 40,
+    "text": "It’s like driving from New York to New Jersey by way of Argentina.",
+    "visual_type": "Concept Visual",
+    "prompt": "The most inefficient road trip ever mapped.\n\nScene: Clean minimal flat illustration, simple bold shapes, thick outlines. A simplified map of North and South America. A red dotted line starts at a dot labeled 'NY', traces all the way down the map to the very bottom tip of South America (Argentina), does a tight U-turn, and goes all the way back up to a dot right next to the start labeled 'NJ'. 16:9 horizontal format, pure white background, no clutter.\n\nStyle Notes: Geography used to highlight pure absurdity.",
+    "use_reference": false
+  },
+  {
+    "line": 41,
+    "text": "Now, let's talk about the real tragedy: your spine.",
+    "visual_type": "Mixed",
+    "prompt": "Mourning the tragedy of human back anatomy.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, minimal curved mouth showing a crying, devastated expression with cartoon tears. The figure is kneeling dramatically in front of a clean minimal flat illustration of a human spine on a tiny display pedestal. 16:9 horizontal format, pure white background.\n\nStyle Notes: Melodramatic grief over a biological structure.",
+    "use_reference": true
+  },
+  {
+    "line": 42,
+    "text": "For hundreds of millions of years, our ancestors walked on four legs.",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "A perfectly content ancient ancestor walking horizontally.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, minimal curved mouth showing a happy, relaxed smile. The figure is walking comfortably on all fours (hands and feet on the ground), back perfectly straight and parallel to the floor. 16:9 horizontal format, single thin line for ground, pure white background.\n\nStyle Notes: Stable, balanced, and carefree.",
+    "use_reference": true
+  },
+  {
+    "line": 43,
+    "text": "The spine was designed to act exactly like a suspension bridge.",
+    "visual_type": "Concept Visual",
+    "prompt": "Comparing horizontal anatomy to civil engineering.\n\nScene: Clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style. A horizontal human spine is drawn. Superimposed perfectly over the top of the spine are the towers and sweeping cables of a sturdy suspension bridge. 16:9 horizontal format, pure white background, no clutter.\n\nStyle Notes: Visual metaphor showing perfect distribution of weight across a horizontal span.",
+    "use_reference": false
+  },
+  {
+    "line": 44,
+    "text": "Then, a few million years ago, some hominid ancestor decided to stand up on two legs.",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "The exact moment of a terrible evolutionary idea.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, minimal curved mouth showing a wide-eyed 'eureka' expression. The figure is halfway through standing up from all fours, rearing up on two wobbly legs, with a glowing yellow lightbulb hovering above its head. 16:9 horizontal format, pure white background.\n\nStyle Notes: Capturing the clumsy transition from four legs to two.",
+    "use_reference": true
+  },
+  {
+    "line": 45,
+    "text": "Evolution didn't redesign the spine to be a vertical pillar.",
+    "visual_type": "Concept Visual",
+    "prompt": "Rejecting a sensible architectural solution.\n\nScene: Clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style. A perfectly straight, sturdy, classic Greek marble pillar. Over the pillar is a massive, bold, red 'X' drawn in thick marker lines. 16:9 horizontal format, pure white background, no clutter.\n\nStyle Notes: Stark visual rejection of logic.",
+    "use_reference": false
+  },
+  {
+    "line": 46,
+    "text": "It just took the suspension bridge and tipped it on its end.",
+    "visual_type": "Concept Visual",
+    "prompt": "Forcefully rotating a horizontal structure vertically.\n\nScene: Clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style. A giant, cartoonish white-gloved hand is grabbing the previously shown suspension bridge and violently rotating it 90 degrees until it balances precariously on one end. Action lines show the twisting motion. 16:9 horizontal format, pure white background, no clutter.\n\nStyle Notes: Emphasizing the forceful, unnatural reorientation.",
+    "use_reference": false
+  },
+  {
+    "line": 47,
+    "text": "Your lower back now takes all the weight of your upper body,",
+    "visual_type": "Mixed",
+    "prompt": "Intense downward pressure on the lower back.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, minimal curved mouth showing a grimacing, strained expression. The figure's lower back area is highlighted with a pulsing, bright red glowing circle (clean minimal flat illustration). Two massive, heavy grey arrows point straight down from the figure's shoulders toward the red lower back. 16:9 horizontal format, pure white background.\n\nStyle Notes: Highlighting the painful focal point of gravity.",
+    "use_reference": true
+  },
+  {
+    "line": 48,
+    "text": "constantly crushing the discs between your vertebrae.",
+    "visual_type": "Concept Visual",
+    "prompt": "Vertebrae acting like a hydraulic press on jelly.\n\nScene: Clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style. A close-up of two large, hard white bone blocks (vertebrae). Sandwiched between them is a bright blue jelly-like disc that is bulging out the sides, being visibly crushed flat by heavy inward-pointing arrows. 16:9 horizontal format, pure white background, no clutter.\n\nStyle Notes: Uncomfortable visual squishing.",
+    "use_reference": false
+  },
+  {
+    "line": 49,
+    "text": "To compensate for this terrible balancing act, the spine had to curve into an 'S' shape,",
+    "visual_type": "Mixed",
+    "prompt": "Desperately bending a straight spine to stay upright.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, sweating profusely. The figure is physically grabbing a giant, straight spinal column (clean minimal flat illustration) and forcefully bending it with its hands and knee into a dramatic, wobbly letter 'S'. 16:9 horizontal format, pure white background.\n\nStyle Notes: Manual labor fixing a bad design.",
+    "use_reference": true
+  },
+  {
+    "line": 50,
+    "text": "turning your skeletal structure into a walking, talking Jenga tower",
+    "visual_type": "Mixed",
+    "prompt": "A stick figure made of an unstable wooden block game.\n\nScene: A simple black stick figure head, arms, and legs. However, instead of a simple line for a torso, the figure's body is a towering, highly unstable stack of wooden Jenga blocks (clean minimal flat illustration), with several blocks missing from the middle. The figure's mouth is an anxious wavy line. 16:9 horizontal format, pure white background.\n\nStyle Notes: Extreme structural instability.",
+    "use_reference": true
+  },
+  {
+    "line": 51,
+    "text": "just waiting for a strong breeze to collapse.",
+    "visual_type": "Mixed",
+    "prompt": "Wind destroying the fragile structure.\n\nScene: A simple black stick figure head and limbs scattering into the air as the Jenga-block torso completely collapses. From the left side of the screen, a cute, stylized grey cloud is blowing a stream of wind (clean minimal flat illustration). The stick figure face shows utter defeat. 16:9 horizontal format, single thin line for ground, pure white background.\n\nStyle Notes: Fragility exposed by a minor external force.",
+    "use_reference": true
+  },
+  {
+    "line": 52,
+    "text": "Combine that with knees that were never originally engineered to carry your entire body weight,",
+    "visual_type": "Mixed",
+    "prompt": "Knees physically shattering under pressure.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, minimal curved mouth screaming in pain. The figure is clutching its knees. The knees are drawn as cracked, crumbling grey concrete pillars (clean minimal flat illustration) with small pieces breaking off. 16:9 horizontal format, pure white background.\n\nStyle Notes: Visualizing biological failure as structural damage.",
+    "use_reference": true
+  },
+  {
+    "line": 53,
+    "text": "and it's a miracle we can walk to the fridge without exploding.",
+    "visual_type": "Mixed",
+    "prompt": "Treating a midnight snack trip like a dangerous mission.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, sweating with a terrified expression. The figure is cautiously tip-toeing in extremely exaggerated slow-motion toward a sleek white refrigerator (clean minimal flat illustration) on the right. 16:9 horizontal format, single thin line for ground, pure white background.\n\nStyle Notes: High tension for an incredibly mundane task.",
+    "use_reference": true
+  },
+  {
+    "line": 54,
+    "text": "Our bipedal skeleton is basically a rushed software update that shipped with massive bugs.",
+    "visual_type": "Concept Visual",
+    "prompt": "A computer error message about the human skeleton.\n\nScene: Clean minimal flat illustration, simple bold shapes, thick outlines. A stylized computer monitor displaying a diagram of a human skeleton. Overlaid on the skeleton is a giant, bright red computer error dialog box with a warning triangle. Large bold text reads 'UPDATE FAILED'. 16:9 horizontal format, pure white background, no clutter.\n\nStyle Notes: Modern tech metaphor for biological flaws.",
     "use_reference": false
   },
   {
     "line": 55,
-    "text": "Something happens, you store the file, you retrieve it later. Same file every time.",
+    "text": "So, your breathing tube is a severe choking hazard,",
     "visual_type": "Concept Visual",
-    "prompt": "Showing a flawless, repetitive mechanical process of identical file retrieval.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. A sequence of three identical arrows looping in a circle. In the center, a pristine yellow manila folder labeled 'FILE 1' remains perfectly crisp and unchanged in every step of the loop.\n\nStyle Notes: Diagrammatic loop layout, emphasizing exact repetition and perfection.",
+    "prompt": "A severe warning sign for the throat.\n\nScene: Clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style. A bright yellow triangular hazard sign. Inside the triangle is a black silhouette of a throat with a giant jagged red lightning bolt cutting through the airway. 16:9 horizontal format, pure white background, no clutter.\n\nStyle Notes: Standard industrial hazard sign aesthetic applied to human anatomy.",
     "use_reference": false
   },
   {
     "line": 56,
-    "text": "That is not how memory works. Not even close.",
-    "visual_type": "Stick Figure Scene",
-    "prompt": "Violently rejecting the previous metaphor to snap the audience into the real science.\n\nScene: simple black stick figure, round circle head, thin black lines for body and limbs, looking intensely angry with furrowed brows. It is performing a high flying karate kick directly into the grey filing cabinet from the previous frame, which is now dented and tipping over violently. pure white background.\n\nStyle Notes: High kinetic action, sudden comedic violence, stark white backdrop.",
+    "text": "your nerves are taking scenic detours through different time zones,",
+    "visual_type": "Mixed",
+    "prompt": "A frustrated tour guide dealing with a lost nerve.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, minimal curved mouth showing severe frustration. The figure is wearing a tour guide hat and holding a map, yelling at a giant yellow squiggly nerve cord (clean minimal flat illustration) that is wearing a colorful Hawaiian shirt, holding a camera, and looking at three different world clocks hovering in the air. 16:9 horizontal format, pure white background.\n\nStyle Notes: Absurd travel metaphor emphasizing the ridiculous distance.",
     "use_reference": true
   },
   {
     "line": 57,
-    "text": "Every single time you remember something, you're not retrieving it — you're reconstructing it.",
-    "visual_type": "Mixed",
-    "prompt": "The brain doing arts and crafts to literally glue a broken memory back together.\n\nScene: A floating pink brain holding a bottle of white glue. It is piecing together a shattered, jagged photograph of a simple black stick figure. The pieces don't align perfectly, leaving overlapping seams and missing chunks. pure white background.\n\nStyle Notes: Messy DIY aesthetic, clear visual metaphor for reconstruction.",
-    "use_reference": true
+    "text": "and your spine is an architectural disaster.",
+    "visual_type": "Concept Visual",
+    "prompt": "A skyscraper collapsing like an 'S'.\n\nScene: Clean minimal flat illustration, simple bold shapes, thick outlines. A tall, modern grey skyscraper built out of bone-like vertebrae blocks. It is bent into a highly unstable 'S' shape and is actively snapping in the middle, with small debris blocks falling out. 16:9 horizontal format, pure white background, no clutter.\n\nStyle Notes: Pure architectural failure translating a biological flaw into a building collapse.",
+    "use_reference": false
   },
   {
     "line": 58,
-    "text": "Your brain reassembles the memory from fragments, fills gaps with assumptions, and then saves the new version over the old one.",
-    "visual_type": "Mixed",
-    "prompt": "The brain actively drawing fake parts onto the memory to fill the holes, making it worse.\n\nScene: The floating pink brain is now holding a thick, bright red marker. It is scribbling a fake, crude, overly-large smiling mouth onto the torn photograph from the previous frame to fill a missing gap. Next to it, a computer floppy disk icon has a red glowing 'OVERWRITE' text above it. pure white background.\n\nStyle Notes: Humorous forgery concept, the red marker adds a jarring color pop.",
+    "text": "But honestly? It’s kind of a flex.",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "Showing off an undeserved sense of superiority.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, minimal curved mouth showing a smug, arrogant smirk. The figure is wearing cool black sunglasses and striking a classic bodybuilder double-bicep flexing pose. 16:9 horizontal format, pure white background.\n\nStyle Notes: Overconfident swagger.",
     "use_reference": true
   },
   {
     "line": 59,
-    "text": "You are, quite literally, editing your past every time you think about it.",
-    "visual_type": "Mixed",
-    "prompt": "A timeline visual where the brain is physically altering the stick figure's own history path.\n\nScene: simple black stick figure walking forward on a solid black timeline path. Behind the figure, the timeline stretches back into the past. A floating pink brain is holding a giant pink eraser, rubbing out pieces of the timeline behind the stick figure and redrawing it as a squiggly, inaccurate mess. pure white background.\n\nStyle Notes: Metaphorical concept art, minimalist framing.",
+    "text": "We are built entirely out of cheap workarounds,",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "Holding a poorly constructed item together.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, minimal curved mouth showing a nervous, sweating smile. The figure is physically holding together a crumbling square structure with massive amounts of rubber bands and giant paperclips. 16:9 horizontal format, pure white background.\n\nStyle Notes: Flimsy, panicked, improvised solutions.",
     "use_reference": true
   },
   {
     "line": 60,
-    "text": "Psychologist Elizabeth Loftus spent decades proving this.",
-    "visual_type": "Concept Visual",
-    "prompt": "A formal, academic introduction slide to ground the incoming study in real science.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. A stylized silhouette profile of a female head with a glowing lightbulb inside. Below it, large, bold, clean text reads 'ELIZABETH LOFTUS'.\n\nStyle Notes: Authoritative textbook graphic design, flat 2D shapes.",
-    "use_reference": false
+    "text": "biological duct tape,",
+    "visual_type": "Mixed",
+    "prompt": "Literally taping the body together.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, neutral expression. The figure is wrapping its own torso and joints extensively with thick, shiny silver duct tape (clean minimal flat illustration). 16:9 horizontal format, pure white background.\n\nStyle Notes: Extreme DIY body maintenance.",
+    "use_reference": true
   },
   {
     "line": 61,
-    "text": "In one landmark study, people who witnessed a simulated car accident were later asked questions using slightly different wording.",
-    "visual_type": "Stick Figure Scene",
-    "prompt": "Setting up the experiment with a stick figure acting as a passive witness to a crash.\n\nScene: simple black stick figure standing on the left holding a clipboard, looking like a neutral observer. In the center, two simple flat toy-like car icons (one red, one blue) are touching nose-to-nose in a minor fender bender. pure white background.\n\nStyle Notes: Sterile laboratory setup, objective framing.",
+    "text": "and legacy code from ancient fish.",
+    "visual_type": "Mixed",
+    "prompt": "A modern computer running ancient aquatic software.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, typing intensely at a sleek silver laptop. On the laptop screen (clean minimal flat illustration), instead of normal computer code, there are bright green matrix-style lines of pixelated 8-bit fish floating downwards. 16:9 horizontal format, pure white background.\n\nStyle Notes: High-tech computing metaphor colliding with evolutionary biology.",
     "use_reference": true
   },
   {
     "line": 62,
-    "text": "When asked 'how fast were the cars going when they smashed into each other' versus 'when they contacted each other,' people gave wildly different speed estimates.",
+    "text": "Yet, despite having the structural integrity of a wet cardboard box,",
     "visual_type": "Concept Visual",
-    "prompt": "Split screen contrasting the two words and their corresponding, drastically different speedometers.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. Split screen. Left side: Word 'SMASHED' above a speedometer pinned in the red zone at max speed, with action lines. Right side: Word 'CONTACTED' above a speedometer hovering in the low green zone. \n\nStyle Notes: Infographic comparison layout, bold typography, clear data contrast.",
+    "prompt": "A sad, dissolving container.\n\nScene: Clean minimal flat illustration, simple bold shapes, thick outlines. A brown corrugated cardboard box that is completely soaked and sagging, actively melting into a dark brown puddle on the floor. 16:9 horizontal format, pure white background, no clutter.\n\nStyle Notes: Maximum pathetic flimsiness.",
     "use_reference": false
   },
   {
     "line": 63,
-    "text": "And the ones asked 'smashed' later remembered — falsely — seeing broken glass.",
-    "visual_type": "Stick Figure Scene",
-    "prompt": "A stick figure 'remembering' an intense detail that didn't exist, looking very sure of itself.\n\nScene: simple black stick figure, round circle head, thin black lines, standing with one hand on its chin in deep thought. Above its head is a large fluffy thought bubble. Inside the bubble is a dramatic illustration of shattered, flying glass shards. The stick figure has a confident, nodding expression. pure white background.\n\nStyle Notes: Subjective reality framing, high contrast between the calm figure and the violent thought bubble.",
+    "text": "we still managed to conquer the planet.",
+    "visual_type": "Mixed",
+    "prompt": "A triumphant stance over the Earth.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, minimal curved mouth showing a victorious yell. The figure is standing proudly atop a minimal, blue and green flat-illustration globe, forcefully planting a large flag into the surface. 16:9 horizontal format, pure white background.\n\nStyle Notes: Grand, triumphant victory against all odds.",
     "use_reference": true
   },
   {
     "line": 64,
-    "text": "There was no broken glass.",
+    "text": "Evolution didn't give you perfection.",
     "visual_type": "Concept Visual",
-    "prompt": "Popping the illusion by showing an aggressively intact piece of glass.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. A completely pristine, uncracked, perfectly smooth car windshield with a small shiny reflection star on it. A giant bright red prohibition circle-slash symbol is stamped over it. Bold text 'NO GLASS'.\n\nStyle Notes: Blunt visual negation, stark objective truth.",
+    "prompt": "A beautiful statue that is heavily flawed.\n\nScene: Clean minimal flat illustration, simple bold shapes, thick outlines. A majestic, classical white marble statue of a human torso on a pedestal. However, the statue has a massive crack running down the middle and one of the arms is attached upside down with messy silver duct tape. 16:9 horizontal format, pure white background, no clutter.\n\nStyle Notes: Juxtaposing high art with terrible, sloppy execution.",
     "use_reference": false
   },
   {
     "line": 65,
-    "text": "One word. Entire fabricated memory.",
-    "visual_type": "Concept Visual",
-    "prompt": "Showing a single small word expanding into a massive, complex lie.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. A tiny black text block that says 'WORD' sits on the left. A massive glowing arrow points right, expanding into a huge, complex geometric web of tangled lines and fake data points. \n\nStyle Notes: Growth metaphor, clean graphic hierarchy.",
-    "use_reference": false
+    "text": "It gave you character.",
+    "visual_type": "Stick Figure Scene",
+    "prompt": "Embracing the flaws with style.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, minimal curved mouth showing a cool, confident smile. The figure is standing in a highly crooked, terrible, slouched posture, but is gracefully tipping a stylish black top hat to the viewer. 16:9 horizontal format, pure white background.\n\nStyle Notes: Owning the brokenness with extreme charisma.",
+    "use_reference": true
   },
   {
     "line": 66,
-    "text": "Your brain said 'smashed sounds serious, broken glass seems appropriate' and just... manufactured evidence.",
+    "text": "And a really bad lower back.",
     "visual_type": "Mixed",
-    "prompt": "The brain acting as a literal factory machine producing fake evidence bags.\n\nScene: A floating pink brain pulling a heavy mechanical lever. Out of a metal chute below the brain, a plastic police evidence bag is dropping out. Inside the bag are jagged shards of broken glass. pure white background.\n\nStyle Notes: Industrial humor, dark comedy concept, clear visual storytelling.",
+    "prompt": "The immediate reality of the bad design returns.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, mouth forming a jagged line of sharp pain. The cool posture from the previous frame is instantly broken as the figure hunches over, clutching its lower back. Bright red, jagged lightning bolts (clean minimal flat illustration) radiate from the lower back area. 16:9 horizontal format, pure white background.\n\nStyle Notes: Sharp comedic contrast from confident to instantly in immense pain.",
     "use_reference": true
   },
   {
     "line": 67,
-    "text": "This is called the misinformation effect,",
-    "visual_type": "Concept Visual",
-    "prompt": "Stamping the official psychological term onto the screen for retention.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. Large, ultra-bold, uppercase text 'MISINFORMATION EFFECT' in the center. A massive red rubber stamp has just hit the text, leaving a red ink splatter effect around the edges.\n\nStyle Notes: Bureaucratic aesthetic, high impact title card.",
-    "use_reference": false
+    "text": "Subscribe before your epiglottis gives out,",
+    "visual_type": "Mixed",
+    "prompt": "An urgent call to action before biological failure.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, mouth open in an urgent shout. The figure is frantically pointing with both hands at a massive, bright red 'SUBSCRIBE' button (clean minimal flat illustration) hovering in the center. Next to the button, a tiny pink anatomical epiglottis flap is drawn visibly cracking and crumbling apart into dust. 16:9 horizontal format, pure white background.\n\nStyle Notes: Urgent, comedic panic driving the call to action.",
+    "use_reference": true
   },
   {
     "line": 68,
-    "text": "and it means your most confident memories are often your most modified ones.",
+    "text": "and I'll see you next time.",
     "visual_type": "Stick Figure Scene",
-    "prompt": "Showing a proudly confident stick figure holding a memory that is clearly a patched-up fake.\n\nScene: simple black stick figure standing extremely proud, hands on hips, chest puffed out, curved confident smile. It is standing next to a massive golden trophy. However, the trophy is heavily wrapped in grey duct tape, missing a handle, and has a crude smiley face drawn on it. pure white background.\n\nStyle Notes: Ironic juxtaposition, character comedy, emphasis on unearned confidence.",
-    "use_reference": true
-  },
-  {
-    "line": 69,
-    "text": "Think about a childhood memory you'd swear is accurate.",
-    "visual_type": "Stick Figure Scene",
-    "prompt": "A nostalgic frame of a stick figure holding a precious mental photograph.\n\nScene: simple black stick figure holding a simple square photo frame up to its chest. It has a warm, nostalgic curved smile. Inside the photo frame is a drawing of a tiny stick figure child holding a red balloon. pure white background.\n\nStyle Notes: Emotional, sentimental mood, intimate framing.",
-    "use_reference": true
-  },
-  {
-    "line": 70,
-    "text": "A birthday party, a family holiday, the first day of school.",
-    "visual_type": "Concept Visual",
-    "prompt": "A quick montage of classic, universally understood childhood memory icons.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. Three clean icons evenly spaced in a horizontal row: a birthday cake with one candle, a simple flat silhouette of an airplane, and a classic yellow school bus.\n\nStyle Notes: Iconography layout, minimal color palette, balanced composition.",
-    "use_reference": false
-  },
-  {
-    "line": 71,
-    "text": "There is a genuine scientific possibility that significant pieces of that memory — the colors, the words, the sequence of events — were quietly rewritten the last dozen times you remembered it.",
-    "visual_type": "Mixed",
-    "prompt": "The brain sneaking behind the sentimental photo and vandalizing/changing it without the stick figure knowing.\n\nScene: The same stick figure from before, still smiling nostalgically and holding the photo frame. But behind it, a floating pink brain is holding a paintbrush and painting the balloon in the photo blue instead of red. The brain is winking at the camera. pure white background.\n\nStyle Notes: Sneaky, unsettling but funny tone, dynamic interaction between the character's belief and the brain's action.",
-    "use_reference": true
-  },
-  {
-    "line": 72,
-    "text": "Okay. Saccades, blind spots, false memories — those are unsettling.",
-    "visual_type": "Mixed",
-    "prompt": "Summarizing the previous horrors by surrounding the stick figure with icons of what we just learned.\n\nScene: simple black stick figure, round circle head, thin black lines, standing center and shivering with a squiggly nervous mouth. Floating around its head are three icons: a darting eye, a black hole, and a shattered photograph. pure white background.\n\nStyle Notes: Recap motif, uneasy comedic mood, high contrast icons.",
-    "use_reference": true
-  },
-  {
-    "line": 73,
-    "text": "But this next part is the one that genuinely makes neuroscientists uncomfortable at dinner parties.",
-    "visual_type": "Mixed",
-    "prompt": "Putting the brain in a social setting where it makes everyone deeply awkward.\n\nScene: A long horizontal table with a thin line floor. Three simple black stick figures are sitting in minimal chairs, holding wine glasses, staring awkwardly with wide dot eyes. At the head of the table sits a giant floating pink brain wearing a tiny formal bowtie, looking incredibly smug. pure white background.\n\nStyle Notes: Awkward social comedy, lots of white space to emphasize the silence.",
-    "use_reference": true
-  },
-  {
-    "line": 74,
-    "text": "Your brain makes decisions before you're aware of them.",
-    "visual_type": "Mixed",
-    "prompt": "Show the brain deciding the stick figure's fate before the stick figure even realizes there's a choice.\n\nScene: simple black stick figure standing passively, looking blankly forward. Floating high above its head, out of its line of sight, the pink brain is holding up a large wooden sign that says 'LEFT'. The stick figure has a small question mark over its head. pure white background.\n\nStyle Notes: Puppet-master theme, clean spatial hierarchy.",
-    "use_reference": true
-  },
-  {
-    "line": 75,
-    "text": "In 1983, neuroscientist Benjamin Libet ran an experiment",
-    "visual_type": "Concept Visual",
-    "prompt": "A sterile, authoritative title card to introduce the historical experiment.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. A classic 1980s-style minimalist laboratory beaker icon. Above it, large bold text reads '1983: LIBET EXPERIMENT'.\n\nStyle Notes: Academic title slide, stark monochrome with bold typography.",
-    "use_reference": false
-  },
-  {
-    "line": 76,
-    "text": "where participants were asked to flick their wrist whenever they felt like it",
-    "visual_type": "Stick Figure Scene",
-    "prompt": "Focus entirely on the physical action of the wrist flick.\n\nScene: simple black stick figure in a medium close-up, arm extended forward. The hand is angled sharply upward at the wrist, with three curved action lines indicating a sudden, sharp flicking motion. The figure has a neutral, focused expression. pure white background.\n\nStyle Notes: Action-oriented, clean instructional framing.",
-    "use_reference": true
-  },
-  {
-    "line": 77,
-    "text": "and note when they decided to move by watching a fast-moving clock hand.",
-    "visual_type": "Concept Visual",
-    "prompt": "A hyper-focused shot of a fast stopwatch to emphasize the precise timing aspect.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. A large, flat analog clock face with no numbers. A single, bold red second hand is blurred with motion trails to show it moving extremely fast. An eye icon stares intently at the clock.\n\nStyle Notes: Time-critical concept, pop of red for urgency.",
-    "use_reference": false
-  },
-  {
-    "line": 78,
-    "text": "He also measured the brain's electrical activity the whole time.",
-    "visual_type": "Mixed",
-    "prompt": "The stick figure wired up to a machine reading the brain's signals.\n\nScene: simple black stick figure standing still, wearing a minimal dome cap on its head with three thin wire lines trailing up to a floating flat monitor screen. The screen displays a jagged, bright green electrical EKG-style wave. pure white background.\n\nStyle Notes: Clinical, scientific testing layout, green wave is the focal point.",
-    "use_reference": true
-  },
-  {
-    "line": 79,
-    "text": "What he found was deeply rude.",
-    "visual_type": "Mixed",
-    "prompt": "The brain showing complete disrespect to the stick figure's autonomy.\n\nScene: simple black stick figure standing on the left looking offended, with a squiggly frown and arms crossed. On the right, the floating pink brain is blowing a tiny party horn and holding up a foam finger, mocking the stick figure. pure white background.\n\nStyle Notes: Absurdist humor, stark contrast between the offended figure and the rude brain.",
-    "use_reference": true
-  },
-  {
-    "line": 80,
-    "text": "The brain showed electrical activity — called the 'readiness potential' —",
-    "visual_type": "Mixed",
-    "prompt": "Visualizing the brain \"charging up\" like a battery before an action.\n\nScene: The floating pink brain, surrounded by jagged yellow lightning bolt icons. Above the brain is a bold, glowing loading bar filled halfway, with text reading 'READINESS POTENTIAL'. pure white background.\n\nStyle Notes: Video game UI logic applied to biology, dynamic energy.",
-    "use_reference": true
-  },
-  {
-    "line": 81,
-    "text": "up to half a second before the person consciously decided to move.",
-    "visual_type": "Concept Visual",
-    "prompt": "A strict timeline graph showing the shocking delay between brain and mind.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. A horizontal timeline arrow. On the far left, a brain icon with a spark. In the middle, bold text reads '-0.5 SECONDS'. On the far right, a lightbulb icon turning on.\n\nStyle Notes: Infographic layout, chronological left-to-right reading.",
-    "use_reference": false
-  },
-  {
-    "line": 82,
-    "text": "Your brain was already in motion.",
-    "visual_type": "Mixed",
-    "prompt": "The brain acting as an impatient runner who started the race early.\n\nScene: A floating pink brain wearing tiny athletic sneakers, in mid-sprint toward the right edge of the frame, leaving dust clouds behind. It is far ahead of a simple black starting line drawn on the pure white floor. pure white background.\n\nStyle Notes: High kinetic speed, sports metaphor.",
-    "use_reference": true
-  },
-  {
-    "line": 83,
-    "text": "You just got the notification late.",
-    "visual_type": "Stick Figure Scene",
-    "prompt": "The stick figure receiving an extremely delayed push notification.\n\nScene: simple black stick figure holding a flat smartphone up to its face. The stick figure looks utterly confused. A giant speech bubble pops out of the phone showing a bell icon and the text 'LATE!'. pure white background.\n\nStyle Notes: Modern tech relatable humor, clean UI elements.",
-    "use_reference": true
-  },
-  {
-    "line": 84,
-    "text": "It's like receiving a 'you just sent an email' confirmation —",
-    "visual_type": "Concept Visual",
-    "prompt": "A universally recognized digital confirmation screen.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. A flat illustration of a computer monitor. On the screen is a massive bright green checkmark and the bold text 'EMAIL SENT'.\n\nStyle Notes: UI design, stark and sterile technology representation.",
-    "use_reference": false
-  },
-  {
-    "line": 85,
-    "text": "except you didn't write the email.",
-    "visual_type": "Stick Figure Scene",
-    "prompt": "The stick figure completely removed from the action, proving it didn't do it.\n\nScene: simple black stick figure sitting at a minimal desk with a computer. Both of the stick figure's thin black arms are raised straight up in the air in a 'hands off' surrender gesture. Its eyes are wide and its mouth is a straight line of shock. pure white background.\n\nStyle Notes: Comedic innocence, empty space emphasizes the lack of control.",
-    "use_reference": true
-  },
-  {
-    "line": 86,
-    "text": "Your unconscious brain did. You just got CC'd.",
-    "visual_type": "Mixed",
-    "prompt": "The brain as a corporate boss doing the actual work and copying the host.\n\nScene: The floating pink brain is wearing a tiny office tie, aggressively typing on a computer keyboard. It holds up a yellow sticky note toward the camera that boldly says 'CC:'. pure white background.\n\nStyle Notes: Office humor, the pink brain contrasts with the sterile white environment.",
-    "use_reference": true
-  },
-  {
-    "line": 87,
-    "text": "Now — philosophers and scientists still debate what this means for free will,",
-    "visual_type": "Stick Figure Scene",
-    "prompt": "Two stick figures locked in an intense intellectual argument over a massive concept.\n\nScene: Two simple black stick figures facing each other, leaning in aggressively with open shouting mouths. Between them floats a giant, heavy bold text reading 'FREE WILL?'. pure white background, single floor line.\n\nStyle Notes: Argumentative energy, text acts as a physical object in the scene.",
-    "use_reference": true
-  },
-  {
-    "line": 88,
-    "text": "so we're not going to solve that today.",
-    "visual_type": "Concept Visual",
-    "prompt": "Putting the massive philosophical concept into a box and locking it away to move on.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. A flat cardboard box with 'FREE WILL' written on it. A massive silver padlock is clamped tightly shut over the top flaps.\n\nStyle Notes: Metaphorical dismissal, clean vector box design.",
-    "use_reference": false
-  },
-  {
-    "line": 89,
-    "text": "But the implication is pretty hard to ignore:",
-    "visual_type": "Stick Figure Scene",
-    "prompt": "The stick figure staring down a terrifying, unavoidable truth.\n\nScene: simple black stick figure, round circle head, thin black lines, standing very small on the left. It is craning its neck up, staring with wide dot eyes at a colossal, heavy black exclamation mark that towers over it on the right side of the frame. pure white background.\n\nStyle Notes: Extreme scale discrepancy, visual weight and tension.",
-    "use_reference": true
-  },
-  {
-    "line": 90,
-    "text": "the 'you' that feels like it's in charge might be more of a narrator than a driver.",
-    "visual_type": "Stick Figure Scene",
-    "prompt": "The stick figure merely reading a script of what's happening, rather than acting.\n\nScene: simple black stick figure sitting in a tall director's chair. Instead of holding a steering wheel, it is holding a large, open book titled 'SCRIPT', reading it aloud with a small speech bubble containing a music note. pure white background.\n\nStyle Notes: Theatrical metaphor, calm and passive mood.",
-    "use_reference": true
-  },
-  {
-    "line": 91,
-    "text": "Your conscious mind may be sitting in the passenger seat,",
-    "visual_type": "Stick Figure Scene",
-    "prompt": "Stick figure positioned strictly on the right side (passenger side) of a minimalist car frame.\n\nScene: A simple line-drawing outline of the front windshield and dashboard of a car. The simple black stick figure is sitting on the right side (passenger seat), leaning back with hands behind its head, looking completely relaxed. pure white background.\n\nStyle Notes: Perspective framing from inside a car, minimalist line art.",
-    "use_reference": true
-  },
-  {
-    "line": 92,
-    "text": "watching the road, confidently giving directions —",
-    "visual_type": "Stick Figure Scene",
-    "prompt": "The passenger taking false ownership by barking orders.\n\nScene: The same inside-car perspective. The stick figure in the passenger seat is now leaning intensely forward, pointing a firm, commanding finger straight out the windshield, with a confident, proud curved smile. pure white background.\n\nStyle Notes: False confidence, dynamic forward-leaning posture.",
-    "use_reference": true
-  },
-  {
-    "line": 93,
-    "text": "to a driver who already decided the route.",
-    "visual_type": "Mixed",
-    "prompt": "Panning to the driver seat to reveal the brain is fully in control and ignoring the passenger.\n\nScene: Panning left inside the car outline. In the driver's seat sits the giant pink brain. It is wearing cool aviator sunglasses, gripping the steering wheel tightly, and aggressively steering the car sharply to the left, completely ignoring the stick figure pointing forward. pure white background.\n\nStyle Notes: Twist reveal, humorous contrast between the two characters' actions.",
-    "use_reference": true
-  },
-  {
-    "line": 94,
-    "text": "And the brain's response to all of this, if it could speak?",
-    "visual_type": "Mixed",
-    "prompt": "The brain stepping up to a microphone to give a press conference.\n\nScene: A floating pink brain positioned behind a simple black podium. A classic retro microphone is bent down toward the brain. pure white background.\n\nStyle Notes: Official press release framing, clean and uncluttered.",
-    "use_reference": true
-  },
-  {
-    "line": 95,
-    "text": "Probably something like: 'You're welcome. I've been handling things.",
-    "visual_type": "Mixed",
-    "prompt": "The brain looking incredibly arrogant and satisfied with its own secret labor.\n\nScene: The floating pink brain is dusting off its non-existent hands in a 'job well done' gesture. It has a deeply smug, self-satisfied smile. A tiny cartoon sparkle icon pings off its side to show how great it thinks it is. pure white background.\n\nStyle Notes: Simple visual shorthand for accomplishment, character arrogance.",
-    "use_reference": true
-  },
-  {
-    "line": 96,
-    "text": "You were busy worrying about embarrassing things you said in 2014.'",
-    "visual_type": "Stick Figure Scene",
-    "prompt": "The tragic, relatable reality of the conscious mind agonizing over past cringe.\n\nScene: simple black stick figure curled up in a tight fetal position on the single thin floor line, hands covering its face in pure agony. Sweat droplets are flying everywhere. Floating above it is a thought bubble containing a flat calendar icon boldly displaying the year '2014'. pure white background.\n\nStyle Notes: Deep existential cringe, hilarious final punchline image.",
-    "use_reference": true
-  },
-  {
-    "line": 97,
-    "text": "So here's what we actually know.",
-    "visual_type": "Stick Figure Scene",
-    "prompt": "Summarizing the journey by showing the stick figure reviewing a large checklist.\n\nScene: simple black stick figure, round circle head, thin black lines for body and limbs, holding a large clipboard and a pen. It is looking down at the clipboard with a focused, serious expression. pure white background.\n\nStyle Notes: Clean educational framing, resetting the visual palate for the conclusion.",
-    "use_reference": true
-  },
-  {
-    "line": 98,
-    "text": "Your visual system has hardware gaps it quietly patches over.",
-    "visual_type": "Concept Visual",
-    "prompt": "A quick visual callback to the patched vision concept.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. A large, flat eye icon with a missing jagged chunk in its center. Two large crisscrossed beige band-aids are stuck clumsily over the hole.\n\nStyle Notes: Simple metaphorical callback, high contrast.",
-    "use_reference": false
-  },
-  {
-    "line": 99,
-    "text": "Your memory rewrites itself every time you open it.",
-    "visual_type": "Concept Visual",
-    "prompt": "Callback to the memory overwrite concept using a nostalgic object being altered.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. A classic polaroid picture. A giant pink pencil is actively erasing the image inside the polaroid and crudely redrawing a new scene over the smudges.\n\nStyle Notes: Action-oriented concept art, clear focus on the alteration process.",
-    "use_reference": false
-  },
-  {
-    "line": 100,
-    "text": "And your sense of making conscious decisions arrives fashionably late to decisions that were already made.",
-    "visual_type": "Stick Figure Scene",
-    "prompt": "Callback to the late arrival concept, showing the stick figure showing up way after the race is over.\n\nScene: simple black stick figure running into the frame from the left, panting heavily with sweat drops flying, holding a small flag. On the right, a checkered finish line ribbon has already been snapped and broken long ago. pure white background.\n\nStyle Notes: Comedic timing, emphasizing the delay.",
-    "use_reference": true
-  },
-  {
-    "line": 101,
-    "text": "Does this mean you can't trust anything?",
-    "visual_type": "Stick Figure Scene",
-    "prompt": "The stick figure experiencing peak paranoia, distrusting its own empty environment.\n\nScene: simple black stick figure standing in the center, looking wildly around with squiggly, highly paranoid eyebrows. It is holding up a giant magnifying glass to examine empty air. pure white background.\n\nStyle Notes: Exaggerated existential paranoia, high negative space to make the figure look isolated.",
-    "use_reference": true
-  },
-  {
-    "line": 102,
-    "text": "Not quite.",
-    "visual_type": "Stick Figure Scene",
-    "prompt": "A calming, reassuring gesture to bring the anxiety back down.\n\nScene: simple black stick figure standing perfectly still. One thin black hand is raised in a gentle, calming 'stop' or 'hold on' gesture. It has a neutral, relaxed curved mouth. pure white background.\n\nStyle Notes: Grounded and reassuring, minimalist framing.",
-    "use_reference": true
-  },
-  {
-    "line": 103,
-    "text": "Your brain isn't malicious —",
-    "visual_type": "Mixed",
-    "prompt": "Clearing the brain's name by dressing it up as a pure, innocent angel.\n\nScene: A floating pink brain with wide, sparkly, innocent anime-style dot eyes. A glowing, bright yellow halo floats perfectly over its top. pure white background.\n\nStyle Notes: Absurdly cute character humor, glowing yellow pop against the pink.",
-    "use_reference": true
-  },
-  {
-    "line": 104,
-    "text": "it's just running the most complicated prediction engine in the known universe on extremely limited resources, at insane speed,",
-    "visual_type": "Mixed",
-    "prompt": "The brain desperately running on a tiny hamster wheel connected to a massive supercomputer.\n\nScene: The floating pink brain, sweating profusely with exertion lines, is running frantically inside a classic metal wire hamster wheel. The wheel is hooked up via thick black cables to a massive, imposing, flashing server rack supercomputer. pure white background.\n\nStyle Notes: High kinetic energy, humorous juxtaposition of low-tech struggle driving high-tech output.",
-    "use_reference": true
-  },
-  {
-    "line": 105,
-    "text": "while also keeping your heart beating, your balance maintained, and your embarrassing memories safely stored.",
-    "visual_type": "Mixed",
-    "prompt": "The overworked brain doing a literal juggling act of these three crucial tasks.\n\nScene: The floating pink brain is rapidly juggling three objects: a stylized red heart, a balancing tightrope pole, and a diary locked with a heavy padlock labeled 'CRINGE'. pure white background.\n\nStyle Notes: Circus-style juggling action lines, fast-paced comedic chaos.",
-    "use_reference": true
-  },
-  {
-    "line": 106,
-    "text": "The fact that it mostly works is, honestly, more impressive than the fact that it occasionally cheats.",
-    "visual_type": "Mixed",
-    "prompt": "The brain accepting a gold medal for a job well done, while obviously holding a cheat card behind its back.\n\nScene: The floating pink brain is standing on a high pedestal labeled '1ST', proudly wearing a gold medal around its base. However, behind its back, a tiny thin black hand is holding a playing card (an Ace of Spades) hidden from view. pure white background.\n\nStyle Notes: Heroic but slightly shady framing, character-driven visual joke.",
-    "use_reference": true
-  },
-  {
-    "line": 107,
-    "text": "But maybe — maybe — the next time you're completely certain about something you saw, something you remember, or a decision you think you freely made...",
-    "visual_type": "Stick Figure Scene",
-    "prompt": "The stick figure back to being highly confident and absolutely certain about itself.\n\nScene: simple black stick figure, standing tall with its chest puffed out, hands firmly on hips, wearing a massive, confident, closed-eye smile. A giant checkmark floats above its head to represent complete certainty. pure white background.\n\nStyle Notes: Hubris before the fall, extreme overconfidence.",
-    "use_reference": true
-  },
-  {
-    "line": 108,
-    "text": "leave just a little room for the possibility that the director already called cut before you knew the scene was running.",
-    "visual_type": "Mixed",
-    "prompt": "The illusion of the stick figure's life being shattered by a sudden movie production element ending the scene.\n\nScene: The same extremely confident stick figure, but a massive classic black-and-white movie clapperboard snaps aggressively shut right over its head, squishing its confident posture downward in a slapstick manner. pure white background.\n\nStyle Notes: Meta-filmmaking twist, sharp sudden action, breaking the fourth wall.",
-    "use_reference": true
-  },
-  {
-    "line": 109,
-    "text": "Your brain is extraordinary.",
-    "visual_type": "Mixed",
-    "prompt": "A final moment of genuine reverence for the complex organ we've been making fun of.\n\nScene: A floating pink brain positioned dead center. It is glowing with majestic, warm golden light rays radiating perfectly outward in a circle. pure white background.\n\nStyle Notes: Sincere, awe-inspiring, clean symmetrical composition.",
-    "use_reference": true
-  },
-  {
-    "line": 110,
-    "text": "It's also, without question, been lying to you this whole time.",
-    "visual_type": "Mixed",
-    "prompt": "Immediately undercutting the reverence with a classic symbol of lying.\n\nScene: The floating pink brain is looking directly at the camera with a sly, mischievous wink. A long, wooden, cylindrical Pinocchio-style nose has sprouted from the front of it. pure white background.\n\nStyle Notes: Quick comedic tonal shift, stark punchline image.",
-    "use_reference": true
-  },
-  {
-    "line": 111,
-    "text": "If your brain let you enjoy this — subscribe.",
-    "visual_type": "Concept Visual",
-    "prompt": "A clean, literal call to action using YouTube UI elements.\n\nScene: clean minimal flat illustration, simple bold shapes, thick outlines, educational diagram style, pure white background, no clutter. A prominent, bold red rectangular 'SUBSCRIBE' button. A large classic white cursor arrow is hovering directly over it, just about to click.\n\nStyle Notes: Standard recognizable UI, high contrast red on white.",
-    "use_reference": false
-  },
-  {
-    "line": 112,
-    "text": "It already decided whether you would.",
-    "visual_type": "Mixed",
-    "prompt": "A final callback to the puppet-master brain controlling the viewer's action.\n\nScene: simple black stick figure looking down in total shock as its own thin black arm moves involuntarily toward a red subscribe button. Thin, glowing green marionette strings attach its wrist straight up to a floating pink brain hovering above, pulling the strings. pure white background.\n\nStyle Notes: Thematic wrap-up, funny unsettling final image.",
+    "prompt": "A classic, friendly sign-off.\n\nScene: A simple black stick figure, round circle head, thin black lines for body and limbs, dot eyes, minimal curved mouth showing a warm, friendly smile. The figure is happily waving one hand at the viewer, standing completely upright and normal again. 16:9 horizontal format, pure white background.\n\nStyle Notes: Clean, standard, cheerful outro.",
     "use_reference": true
   }
 ]

@@ -1,3 +1,4 @@
+# Updated run_pipeline with robust error handling, logging, and CLI options
 import urllib.request
 import urllib.parse
 import json
@@ -100,7 +101,7 @@ def check_for_critical_errors(video_id):
             raise SystemExit("Aborting pipeline due to model access denied.")
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Run FlowKit generation pipeline with robust error handling.")
+    parser = argparse.ArgumentParser(description="Run FlowKit image generation pipeline with robust error handling.")
     parser.add_argument("--stop-on-error", action="store_true", help="Abort the entire pipeline on first unrecoverable error.")
     return parser.parse_args()
 
@@ -111,7 +112,7 @@ def main():
         if args.stop_on_error:
             raise SystemExit("Aborting pipeline due to error.")
     try:
-        project_name = "the_channel_tunnel"
+        project_name = "evolution"
         projects = request("/api/projects", method="GET")
         existing_proj = next((p for p in projects if p.get('name') == project_name), None)
         
@@ -122,10 +123,10 @@ def main():
             logger.info("Creating new project...")
             proj_res = request("/api/projects", data={
                 "name": project_name,
-                "description": "Generating a the channel tunnel video in 9:16 aspect ratio",
-                "story": "A slow cinematic reveal of the channel tunnel.",
+                "description": "evolution",
+                "story": "evolution",
                 "material": "nano_banana_2",
-                "characters": []
+                "characters": [{"name": "StickFigure", "entity_type": "character", "description": "simple black stick figure, round circle head, thin black lines for body and limbs"}]
             })
             if not proj_res or 'id' not in proj_res:
                 raise ApiError("Failed to create project")
@@ -133,8 +134,35 @@ def main():
             logger.info(f"Project created: {project_id}")
             
         request("/api/active-project", method="PUT", data={"project_id": project_id})
-
-        video_title = " the channel tunnel Video"
+        
+        logger.info("Checking characters...")
+        chars_res = request(f"/api/projects/{project_id}/characters", method="GET")
+        if not chars_res:
+            raise ApiError("Failed to fetch characters")
+        char = next((c for c in chars_res if c.get('name') == "StickFigure"), None)
+        if not char:
+            raise ApiError("Character StickFigure not found")
+            
+        char_id = char['id']
+        media_id = char.get('media_id')
+        
+        if not media_id:
+            logger.info("Uploading reference image...")
+            img_path = r"C:\Users\DELL\Desktop\New folder\opensourceChromeExt\flowkit\my_prompt_assets\stick_figure\base_char.jpg"
+            img_res = request("/api/flow/upload-image", data={"file_path": img_path, "file_name": "base_char.jpg", "project_id": project_id})
+            if not img_res or 'media_id' not in img_res:
+                raise ApiError("Failed to upload image")
+            media_id = img_res['media_id']
+            logger.info(f"Uploaded image, media_id: {media_id}")
+            logger.info(f"Linking media_id to character {char_id}")
+            patch_res = request(f"/api/characters/{char_id}", method="PATCH", data={"media_id": media_id})
+            if not patch_res or patch_res.get('media_id') != media_id:
+                raise ApiError("Failed to link character reference image")
+            logger.info("Character reference linked successfully")
+        else:
+            logger.info(f"Character already has media_id: {media_id}")
+            
+        video_title = "Main Video"
         videos = request(f"/api/videos?project_id={project_id}", method="GET")
         existing_vid = next((v for v in videos if v.get('title') == video_title), None)
         
@@ -148,61 +176,45 @@ def main():
                 raise ApiError("Failed to create video")
             video_id = vid_res['id']
             logger.info(f"Video created: {video_id}")
-        
-        logger.info("Loading prompts...")
-        prompts_file = r"C:\Users\DELL\Desktop\New folder\opensourceChromeExt\flowkit\my_prompt_assets\megastructure\prompts.json"
-        
-        if not os.path.exists(prompts_file):
-            raise PipelineError(f"Prompts file not found: {prompts_file}")
-            
-        with open(prompts_file, 'r', encoding='utf-8') as f:
-            content = f.read().strip()
-            if not content:
-                raise PipelineError(f"Prompts file is empty: {prompts_file}")
-            prompts = json.loads(content)
-            
-        if isinstance(prompts, dict):
-            prompts = [prompts]
             
         logger.info("Fetching output directory details...")
         out_dir_res = request(f"/api/projects/{project_id}/output-dir", method="GET")
         if out_dir_res and 'path' in out_dir_res:
             output_dir = out_dir_res['path']
         else:
-            output_dir = f"output/the_channel_tunnel"
-            
+            output_dir = f"output/stick_figure/evolution"
         os.makedirs(f"{output_dir}/scenes", exist_ok=True)
-        logger.info(f"Assets will be saved to: {output_dir}/scenes")
-        
-        ori = "VERTICAL"
-        
-        logger.info("Checking for existing scenes to resume or create...")
+        logger.info(f"Images will be saved to: {output_dir}/scenes")
+
+        logger.info("Creating or resuming scenes from prompts...")
+        prompts_file = r"C:\Users\DELL\Desktop\New folder\opensourceChromeExt\flowkit\my_prompt_assets\stick_figure\prompts.json"
+        with open(prompts_file, 'r', encoding='utf-8') as f:
+            prompts = json.load(f)
+
         existing_scenes = request(f"/api/scenes?video_id={video_id}", method="GET")
         scene_by_order = {s.get('display_order'): s for s in existing_scenes}
         scene_ids = []
         
         for i, p in enumerate(prompts):
-            img_prompt = p.get('img_prompt', '')
-            vid_prompt = p.get('vid_prompt', p.get('video_prompt', ''))
-            narrator_text = p.get('text', '')
+            use_ref = p.get('use_reference') or p.get('use_references') or False
+            chars = ["StickFigure"] if use_ref else []
+            prompt_text = p['prompt']
             
             if i in scene_by_order:
                 sid = scene_by_order[i]['id']
                 logger.info(f"Resumed scene {i+1}/{len(prompts)}: {sid}. Updating prompts...")
                 request(f"/api/scenes/{sid}", method="PATCH", data={
-                    "prompt": img_prompt,
-                    "video_prompt": vid_prompt,
-                    "narrator_text": narrator_text
+                    "prompt": prompt_text,
+                    "character_names": chars
                 })
                 scene_ids.append(sid)
             else:
                 scene_res = request("/api/scenes", data={
                     "video_id": video_id,
                     "display_order": i,
-                    "prompt": img_prompt,
-                    "video_prompt": vid_prompt,
-                    "narrator_text": narrator_text,
-                    "character_names": [],
+                    "prompt": prompt_text,
+                    "video_prompt": "",
+                    "character_names": chars,
                     "chain_type": "ROOT"
                 })
                 if scene_res and 'id' in scene_res:
@@ -211,26 +223,32 @@ def main():
                 else:
                     maybe_abort(f"Failed to create scene {i+1}")
 
-        # 1. Generate Image
-        logger.info(f"Checking scene statuses before image generation...")
+        logger.info("Checking scene statuses before batch submission...")
         current_scenes = request(f"/api/scenes?video_id={video_id}", method="GET")
-        scene_img_status = {s['id']: s.get("vertical_image_status") for s in current_scenes}
-        
-        img_reqs = []
+        scene_status_map = {s['id']: s.get("horizontal_image_status") for s in current_scenes}
+
+        requests_list = []
         for sid in scene_ids:
-            if scene_img_status.get(sid) == "COMPLETED":
+            # Skip scenes that are already successfully generated
+            if scene_status_map.get(sid) == "COMPLETED":
                 continue
-            img_reqs.append({"type": "GENERATE_IMAGE", "scene_id": sid, "project_id": project_id, "video_id": video_id, "orientation": ori})
+            requests_list.append({
+                "type": "GENERATE_IMAGE",
+                "scene_id": sid,
+                "project_id": project_id,
+                "video_id": video_id,
+                "orientation": "HORIZONTAL"
+            })
             
-        if img_reqs:
-            logger.info(f"Submitting {len(img_reqs)} new GENERATE_IMAGE requests ({ori}) in batch...")
-            batch_res = request("/api/requests/batch", data={"requests": img_reqs})
+        if requests_list:
+            logger.info(f"Submitting {len(requests_list)} new image generation requests...")
+            batch_res = request("/api/requests/batch", data={"requests": requests_list})
             if not batch_res:
-                maybe_abort("Image submission failed")
+                maybe_abort("Batch submission failed")
         else:
-            logger.info("All images are already COMPLETED. No new image requests to submit.")
+            logger.info("All scenes are already COMPLETED. No new requests to submit.")
             
-        logger.info("Polling image generation status...")
+        logger.info("Polling scene generation status...")
         while True:
             time.sleep(10)
             
@@ -238,7 +256,7 @@ def main():
             if not scenes_data:
                 continue
                 
-            status_map = {s['id']: s.get("vertical_image_status") for s in scenes_data}
+            status_map = {s['id']: s.get("horizontal_image_status") for s in scenes_data}
             
             total = len(scene_ids)
             completed = 0
@@ -255,108 +273,37 @@ def main():
                     pending += 1
                     
             done = (pending == 0)
-            logger.info(f"Image Status: {completed}/{total} completed, {failed} failed.")
+            
+            logger.info(f"Generation status: {completed}/{total} completed, {failed} failed.")
             
             if failed > 0:
                 check_for_critical_errors(video_id)
+            
             if done:
                 break
                 
-        # 2. Generate Video
-        logger.info(f"Checking scene statuses before video generation...")
-        current_scenes = request(f"/api/scenes?video_id={video_id}", method="GET")
-        scene_vid_status = {s['id']: s.get("vertical_video_status") for s in current_scenes}
+        logger.info("All image generations finished. Downloading images...")
         
-        vid_reqs = []
-        for sid in scene_ids:
-            if scene_vid_status.get(sid) == "COMPLETED":
-                continue
-            vid_reqs.append({"type": "GENERATE_VIDEO", "scene_id": sid, "project_id": project_id, "video_id": video_id, "orientation": ori})
-            
-        if vid_reqs:
-            logger.info(f"Submitting {len(vid_reqs)} new GENERATE_VIDEO requests ({ori}) in batch...")
-            batch_res = request("/api/requests/batch", data={"requests": vid_reqs})
-            if not batch_res:
-                maybe_abort("Video submission failed")
-        else:
-            logger.info("All videos are already COMPLETED. No new video requests to submit.")
-            
-        logger.info("Polling video generation status...")
-        while True:
-            time.sleep(10)
-            
-            scenes_data = request(f"/api/scenes?video_id={video_id}", method="GET")
-            if not scenes_data:
-                continue
-                
-            status_map = {s['id']: s.get("vertical_video_status") for s in scenes_data}
-            
-            total = len(scene_ids)
-            completed = 0
-            failed = 0
-            pending = 0
-            
-            for sid in scene_ids:
-                st = status_map.get(sid)
-                if st == "COMPLETED":
-                    completed += 1
-                elif st == "FAILED":
-                    failed += 1
-                else:
-                    pending += 1
-                    
-            done = (pending == 0)
-            logger.info(f"Video Status: {completed}/{total} completed, {failed} failed.")
-            
-            if failed > 0:
-                check_for_critical_errors(video_id)
-            if done:
-                break
-                
-        # 3. Download Assets
-        logger.info("Downloading Assets...")
         for i, sid in enumerate(scene_ids):
             scene_data = request(f"/api/scenes/{sid}", method="GET")
             if not scene_data:
                 continue
-                
-            # Download Image
-            img_status = scene_data.get("vertical_image_status")
-            img_url = scene_data.get("vertical_image_url")
-            if img_status == "COMPLETED" and img_url and img_url.startswith("http"):
+            status = scene_data.get("horizontal_image_status")
+            img_url = scene_data.get("horizontal_image_url")
+            
+            if status == "COMPLETED" and img_url and img_url.startswith("http"):
                 dest_file = f"{output_dir}/scenes/scene_{i+1:03d}_{sid}.jpg"
+                logger.info(f"Downloading {dest_file}...")
                 try:
                     req = urllib.request.Request(img_url, headers={"User-Agent": "Mozilla/5.0"})
                     with urllib.request.urlopen(req) as response, open(dest_file, 'wb') as out_file:
                         out_file.write(response.read())
-                    logger.info(f"Downloaded image {dest_file}")
                 except Exception as e:
                     logger.error(f"Failed to download image: {e}")
-            elif img_status == "FAILED":
-                logger.warning(f"Image generation failed for scene {i+1}")
+            elif status == "FAILED":
+                logger.warning(f"Image generation ultimately failed for scene {i+1}")
                 
-            # Download Video
-            vid_status = scene_data.get("vertical_video_status")
-            vid_url = scene_data.get("vertical_video_url")
-            if vid_status == "COMPLETED" and vid_url:
-                dest_file = f"{output_dir}/scenes/scene_{i+1:03d}_{sid}.mp4"
-                try:
-                    if vid_url.startswith("http"):
-                        req = urllib.request.Request(vid_url, headers={"User-Agent": "Mozilla/5.0"})
-                        with urllib.request.urlopen(req) as response, open(dest_file, 'wb') as out_file:
-                            out_file.write(response.read())
-                    elif vid_url.startswith("file://"):
-                        import shutil
-                        src_file = vid_url.replace("file://", "")
-                        shutil.copy(src_file, dest_file)
-                    logger.info(f"Downloaded video {dest_file}")
-                except Exception as e:
-                    logger.error(f"Failed to download video: {e}")
-            elif vid_status == "FAILED":
-                logger.warning(f"Video generation failed for scene {i+1}")
-                
-        logger.info("All scenes processed and downloaded successfully.")
-        
+        logger.info("All image downloads processed.")
     except PipelineError as e:
         logger.exception(f"Pipeline encountered an error: {e}")
         if args.stop_on_error:
